@@ -1,0 +1,3753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manikanta N. | Cloud & DevOps Systems Engineer</title>
+<meta name="description" content="Manikanta N. - B.Tech CSE student specializing in AWS Cloud Infrastructure, High-Availability Node.js Backends, and DevOps Automation. Open to engineering internships.">
+<meta property="og:title" content="Manikanta N. | Cloud & DevOps Systems Engineer">
+<meta property="og:description" content="AWS Multi-AZ Cloud Architecture, Node.js Backends, and Kubernetes Systems. View live deployments and technical roadmap.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   INTERSTELLAR GARGANTUA & GOLDEN PARTICLE UNIVERSE DESIGN SYSTEM
+   Cinematic Black Hole, Champagne Gold, Metallic Silver & Deep Cosmic Void
+   ========================================================================== */
+:root {
+  --bg-void: #000000;
+  --bg-deep: #030305;
+  --bg-surface: #0a090f;
+  --bg-card: rgba(10, 9, 15, 0.76);
+  --bg-card-hover: rgba(18, 16, 26, 0.88);
+  
+  --border-subtle: rgba(245, 230, 200, 0.10);
+  --border-medium: rgba(245, 230, 200, 0.22);
+  --border-active: #ffd600;
+  
+  /* Champagne Gold & Platinum Light */
+  --gold-champagne: #f5e6c8;
+  --gold-pulsar: #ffd600;
+  --gold-warm: #ffb800;
+  --gold-amber: #e59830;
+  --gold-glow: rgba(245, 230, 200, 0.24);
+  --gold-tint: rgba(255, 214, 0, 0.08);
+  
+  /* Celestial Platinum & Silver */
+  --silver-white: #ffffff;
+  --silver-glow: #e2e8f0;
+  --silver-dim: #94a3b8;
+  --silver-tint: rgba(226, 232, 240, 0.08);
+  --silver-border: rgba(226, 232, 240, 0.28);
+  
+  /* Cosmic Relativistic Accents */
+  --cyan-glow: #06b6d4;
+  --cyan-tint: rgba(6, 182, 212, 0.12);
+  --violet-glow: #8b5cf6;
+  --violet-tint: rgba(139, 92, 246, 0.12);
+  --amber-glow: #ff7a00;
+  --amber-tint: rgba(255, 122, 0, 0.12);
+  --emerald-live: #38ef7d;
+  
+  --text-primary: #ffffff;
+  --text-muted: #a6a3b2;
+  --text-dim: #6c6978;
+  --text-inverse: #000000;
+  
+  --ease-base: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-base: 500ms;
+  --duration-hover: 300ms;
+  
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   RESET & FOUNDATIONS
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+  background-color: var(--bg-void);
+  color: var(--text-primary);
+  font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-void);
+  overflow-x: hidden;
+  position: relative;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  text-wrap: pretty;
+  min-height: 100vh;
+}
+
+.mono {
+  font-family: "Geist Mono", monospace;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--gold-champagne);
+  color: #000;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 16px;
+  outline: 2px solid #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-champagne);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY SPECIFICATION (Strict Type Scale)
+   ========================================================================== */
+.heading-1 { font-size: 60px; line-height: 60px; font-weight: 600; text-wrap: balance; }
+.heading-2 { font-size: 48px; line-height: 48px; font-weight: 600; text-wrap: balance; }
+.heading-3 { font-size: 36px; line-height: 40px; font-weight: 600; text-wrap: balance; }
+.heading-4 { font-size: 30px; line-height: 36px; font-weight: 600; text-wrap: balance; }
+.heading-5 { font-size: 24px; line-height: 32px; font-weight: 600; text-wrap: balance; }
+.heading-6 { font-size: 20px; line-height: 28px; font-weight: 600; text-wrap: balance; }
+
+.title-1 { font-size: 20px; line-height: 28px; font-weight: 500; }
+.title-2 { font-size: 18px; line-height: 28px; font-weight: 500; }
+.title-3 { font-size: 16px; line-height: 24px; font-weight: 500; }
+.title-4 { font-size: 14px; line-height: 20px; font-weight: 500; }
+.title-5 { font-size: 12px; line-height: 16px; font-weight: 500; }
+
+.body-1 { font-size: 16px; line-height: 24px; font-weight: 600; }
+.body-2 { font-size: 16px; line-height: 24px; font-weight: 500; }
+.body-3 { font-size: 16px; line-height: 24px; font-weight: 400; }
+.body-4 { font-size: 14px; line-height: 20px; font-weight: 600; }
+.body-5 { font-size: 14px; line-height: 20px; font-weight: 500; }
+.body-6 { font-size: 14px; line-height: 20px; font-weight: 400; }
+
+.caption-1 { font-size: 14px; line-height: 20px; font-weight: 500; }
+.caption-2 { font-size: 14px; line-height: 20px; font-weight: 400; }
+.caption-3 { font-size: 12px; line-height: 16px; font-weight: 600; }
+.caption-4 { font-size: 12px; line-height: 16px; font-weight: 500; }
+.caption-5 { font-size: 12px; line-height: 16px; font-weight: 400; }
+
+@media (max-width: 768px) {
+  .heading-1 { font-size: 38px; line-height: 42px; }
+  .heading-2 { font-size: 30px; line-height: 36px; }
+  .heading-3 { font-size: 24px; line-height: 32px; }
+}
+
+/* ==========================================================================
+   LAYOUT CONTAINERS & SPACING
+   ========================================================================== */
+.wrap {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 96px 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 64px 0;
+  }
+}
+
+.sec-head {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+.sec-head .caption-3 {
+  color: var(--gold-champagne);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sec-head .caption-3::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--gold-champagne);
+  box-shadow: 0 0 10px var(--gold-champagne), 0 0 4px #fff;
+}
+.sec-head p {
+  margin-top: 12px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   WEBGL 3D CANVAS & CURSOR
+   ========================================================================== */
+#gl-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  display: block;
+  pointer-events: auto;
+  touch-action: pan-y; /* Allows natural vertical scrolling on mobile */
+}
+
+/* Subtle atmospheric backdrop vignette behind HTML text */
+.space-vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.45) 80%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+/* Cosmic custom cursor */
+.cur-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border: 1.5px solid rgba(245, 230, 200, 0.75);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: screen;
+  transition: width 0.3s var(--ease-base), height 0.3s var(--ease-base), margin 0.3s var(--ease-base), border-color 0.3s var(--ease-base);
+  display: none;
+}
+.cur-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background-color: var(--silver-white);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 0 12px var(--gold-champagne), 0 0 6px #fff;
+  display: none;
+}
+.cur-ring.active {
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  border-color: #ffffff;
+  background-color: rgba(245, 230, 200, 0.12);
+  box-shadow: 0 0 24px rgba(245, 230, 200, 0.4);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cur-ring, .cur-dot {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+nav {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-medium);
+  border-radius: 16px;
+  background: rgba(8, 7, 12, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 100;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8), 0 0 16px rgba(245, 230, 200, 0.05);
+  max-width: 95vw;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+  padding: 4px 12px;
+  border-radius: 8px;
+  transition: color var(--duration-hover) var(--ease-base);
+}
+.nav-brand-status {
+  width: 6px;
+  height: 6px;
+  background-color: var(--gold-champagne);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--gold-champagne), 0 0 14px var(--cyan-glow);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+.nav-links a {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color var(--duration-hover) var(--ease-base), background-color var(--duration-hover) var(--ease-base);
+}
+.nav-links a:hover, .nav-links a.active {
+  color: var(--gold-champagne);
+  background-color: rgba(245, 230, 200, 0.08);
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--gold-champagne);
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color var(--duration-hover) var(--ease-base), transform var(--duration-hover) var(--ease-base), box-shadow var(--duration-hover) var(--ease-base);
+}
+.nav-cta:hover {
+  background: #ffffff;
+  box-shadow: 0 0 18px rgba(245, 230, 200, 0.5);
+}
+.nav-cta:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 860px) {
+  .nav-links .hide-sm {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  nav {
+    padding: 6px 8px;
+    gap: 4px;
+  }
+  .nav-brand span {
+    display: none;
+  }
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+}
+
+/* ==========================================================================
+   BUTTONS & CTAs
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border: 1px solid var(--border-medium);
+  background-color: rgba(16, 14, 22, 0.72);
+  backdrop-filter: blur(8px);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color var(--duration-hover) var(--ease-base), border-color var(--duration-hover) var(--ease-base), transform var(--duration-hover) var(--ease-base), box-shadow var(--duration-hover) var(--ease-base);
+}
+.btn:hover {
+  background-color: #221f2e;
+  border-color: var(--gold-champagne);
+  box-shadow: 0 0 16px rgba(245, 230, 200, 0.22);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--gold-champagne);
+  color: #000000;
+  border-color: var(--gold-champagne);
+}
+.btn-primary:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 24px rgba(245, 230, 200, 0.5), 0 0 10px #fff;
+}
+
+.btn-silver {
+  background: rgba(226, 232, 240, 0.1);
+  color: var(--silver-glow);
+  border-color: var(--silver-border);
+}
+.btn-silver:hover {
+  background: rgba(226, 232, 240, 0.2);
+  border-color: #ffffff;
+  box-shadow: 0 0 16px rgba(226, 232, 240, 0.3);
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   INTERSTELLAR TELEMETRY HUD
+   ========================================================================== */
+.space-hud {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 40;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 240px;
+  background: rgba(10, 9, 14, 0.88);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 8px 12px;
+  backdrop-filter: blur(14px);
+  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 12px rgba(245, 230, 200, 0.08);
+}
+.space-hud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: var(--gold-champagne);
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.space-hud-track {
+  width: 100%;
+  height: 2px;
+  background: var(--border-subtle);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.space-hud-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-champagne), var(--cyan-glow));
+  box-shadow: 0 0 8px var(--gold-champagne);
+  transition: width 0.1s linear;
+}
+.space-hud-metrics {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--silver-dim);
+}
+
+@media (max-width: 768px) {
+  .space-hud {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 112px;
+  padding-bottom: 64px;
+}
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background: rgba(245, 230, 200, 0.08);
+  border: 1px solid rgba(245, 230, 200, 0.3);
+  border-radius: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--gold-champagne);
+  margin-bottom: 24px;
+}
+.hero-pill-ping {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--gold-champagne);
+  box-shadow: 0 0 10px var(--gold-champagne), 0 0 4px #fff;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.8); }
+}
+
+.hero-heading {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  background: linear-gradient(135deg, #ffffff 0%, #f5e6c8 45%, #ffd600 80%, #e59830 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+
+.hero-sub {
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 32px;
+  max-width: 640px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.hero-proof-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 8px;
+}
+.hero-proof-item {
+  display: flex;
+  flex-direction: column;
+}
+.hero-proof-value {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--gold-champagne);
+  text-shadow: 0 0 12px rgba(245, 230, 200, 0.25);
+}
+.hero-proof-label {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--silver-dim);
+}
+
+.hero-space-tip {
+  margin-top: 32px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--silver-dim);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-space-tip svg {
+  color: var(--gold-champagne);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   B11 MANDATORY TAGLINE REVEAL SECTION
+   ========================================================================== */
+.tagline-section {
+  padding: 96px 0;
+  background: #000000;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.tagline-box {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.tagline-badge {
+  color: var(--cyan-glow);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tagline-text {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+@media (min-width: 768px) {
+  .tagline-text {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+.tagline-word {
+  display: inline-block;
+  opacity: 0.25;
+  color: var(--text-muted);
+  transform: translateY(4px);
+  transition: opacity 0.6s var(--ease-base), color 0.6s var(--ease-base), transform 0.6s var(--ease-base);
+  margin-right: 0.28em;
+}
+.tagline-word.illuminated {
+  opacity: 1;
+  color: #ffffff;
+  transform: translateY(0);
+}
+.tagline-word.highlight {
+  color: var(--gold-champagne);
+  text-shadow: 0 0 16px rgba(245, 230, 200, 0.45);
+}
+.tagline-word.cyan-glow {
+  color: var(--cyan-glow);
+  text-shadow: 0 0 16px rgba(6, 182, 212, 0.4);
+}
+
+/* ==========================================================================
+   INTERACTIVE ARCHITECTURE TOPOLOGY VISUALIZER
+   ========================================================================== */
+.arch-visualizer-card {
+  padding: 32px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: var(--bg-card);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+}
+.arch-visualizer-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(245, 230, 200, 0.08) 0%, rgba(6, 182, 212, 0.04) 50%, transparent 70%);
+  pointer-events: none;
+}
+.arch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.arch-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.arch-canvas-container {
+  position: relative;
+  width: 100%;
+  min-height: 380px;
+  background: #06050a;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.arch-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(245, 230, 200, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 230, 200, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.arch-tiers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 900px) {
+  .arch-tiers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .arch-tiers {
+    grid-template-columns: 1fr;
+  }
+}
+
+.arch-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.arch-col-title {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--gold-champagne);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.arch-col-title svg {
+  width: 14px;
+  height: 14px;
+}
+
+.arch-node {
+  padding: 12px 14px;
+  border: 1px solid var(--border-medium);
+  border-radius: 8px;
+  background: #0f0e16;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-base);
+  position: relative;
+}
+.arch-node:hover, .arch-node.active {
+  border-color: var(--gold-champagne);
+  background: #181624;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(245, 230, 200, 0.2), 0 0 8px rgba(6, 182, 212, 0.15);
+}
+.arch-node-name {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arch-node-tag {
+  font-size: 10px;
+  font-family: "Geist Mono", monospace;
+  color: var(--gold-champagne);
+}
+.arch-node-desc {
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.arch-inspector-bar {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #0c0b12;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.arch-inspector-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.arch-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-family: "Geist Mono", monospace;
+  color: var(--gold-champagne);
+  background: rgba(245, 230, 200, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 230, 200, 0.3);
+}
+
+/* ==========================================================================
+   CARDS & 3D TILT CONTAINERS
+   ========================================================================== */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--duration-hover) var(--ease-base), box-shadow var(--duration-hover) var(--ease-base);
+}
+.card:hover {
+  border-color: var(--border-medium);
+}
+
+.tilt {
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.6s var(--ease-base);
+  will-change: transform;
+}
+.tilt.moving {
+  transition: transform 0.1s linear;
+}
+
+/* Color-coded tags */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid var(--border-medium);
+  color: var(--text-muted);
+}
+.tag-gold {
+  color: var(--gold-champagne);
+  border-color: rgba(245, 230, 200, 0.4);
+  background: rgba(245, 230, 200, 0.08);
+}
+.tag-silver {
+  color: var(--silver-glow);
+  border-color: var(--silver-border);
+  background: var(--silver-tint);
+}
+.tag-cyan {
+  color: var(--cyan-glow);
+  border-color: rgba(6, 182, 212, 0.4);
+  background: var(--cyan-tint);
+}
+.tag-violet {
+  color: var(--violet-glow);
+  border-color: rgba(139, 92, 246, 0.4);
+  background: var(--violet-tint);
+}
+.tag-amber {
+  color: var(--amber-glow);
+  border-color: rgba(255, 122, 0, 0.4);
+  background: var(--amber-tint);
+}
+.tag-live {
+  color: var(--emerald-live);
+  border-color: rgba(56, 239, 125, 0.4);
+  background: rgba(56, 239, 125, 0.08);
+}
+
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.chip {
+  padding: 4px 8px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  background: #12111a;
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color var(--duration-hover) var(--ease-base), background-color var(--duration-hover) var(--ease-base);
+}
+.chip:hover {
+  border-color: var(--gold-champagne);
+  background-color: #1e1c2a;
+}
+.chip-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--gold-champagne);
+}
+.chip-dot.silver { background-color: var(--silver-glow); box-shadow: 0 0 6px #fff; }
+.chip-dot.cyan { background-color: var(--cyan-glow); }
+.chip-dot.violet { background-color: var(--violet-glow); }
+
+/* ==========================================================================
+   SKILLS MATRIX WITH SEARCH & CATEGORY FILTERING
+   ========================================================================== */
+.skills-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.skills-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-tab {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-medium);
+  background: rgba(14, 13, 20, 0.6);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--duration-hover) var(--ease-base);
+}
+.filter-tab:hover, .filter-tab.active {
+  color: #000;
+  background: var(--gold-champagne);
+  border-color: var(--gold-champagne);
+  box-shadow: 0 0 12px rgba(245, 230, 200, 0.35);
+}
+
+.skills-search-wrap {
+  position: relative;
+  min-width: 240px;
+}
+.skills-search-input {
+  width: 100%;
+  padding: 6px 12px 6px 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border-medium);
+  background: #0f0e16;
+  color: var(--text-primary);
+  font-size: 13px;
+  line-height: 18px;
+  outline: none;
+  transition: border-color var(--duration-hover) var(--ease-base);
+}
+.skills-search-input:focus {
+  border-color: var(--gold-champagne);
+  box-shadow: 0 0 12px rgba(245, 230, 200, 0.25);
+}
+.skills-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: var(--silver-dim);
+  pointer-events: none;
+}
+
+.skills-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.skill-card {
+  padding: 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s var(--ease-base);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skill-card:hover {
+  border-color: var(--gold-champagne);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(245, 230, 200, 0.15), 0 0 12px rgba(6, 182, 212, 0.08);
+  background: #14131e;
+}
+.skill-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.skill-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(245, 230, 200, 0.08);
+  border: 1px solid rgba(245, 230, 200, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-champagne);
+  flex-shrink: 0;
+}
+.skill-icon-box.cyan {
+  background: var(--cyan-tint);
+  border-color: rgba(6, 182, 212, 0.3);
+  color: var(--cyan-glow);
+}
+.skill-icon-box.violet {
+  background: var(--violet-tint);
+  border-color: rgba(139, 92, 246, 0.3);
+  color: var(--violet-glow);
+}
+.skill-icon-box.silver {
+  background: var(--silver-tint);
+  border-color: var(--silver-border);
+  color: var(--silver-glow);
+}
+.skill-status-tag {
+  font-size: 10px;
+  font-family: "Geist Mono", monospace;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-medium);
+  color: var(--text-muted);
+}
+.skill-status-tag.verified {
+  color: var(--gold-champagne);
+  border-color: rgba(245, 230, 200, 0.4);
+  background: rgba(245, 230, 200, 0.08);
+}
+.skill-status-tag.silver {
+  color: var(--silver-glow);
+  border-color: var(--silver-border);
+  background: var(--silver-tint);
+}
+.skill-status-tag.cyan {
+  color: var(--cyan-glow);
+  border-color: rgba(6, 182, 212, 0.4);
+  background: var(--cyan-tint);
+}
+.skill-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.skill-role {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.skill-footer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+}
+.skill-micro-tag {
+  font-size: 11px;
+  font-family: "Geist Mono", monospace;
+  color: var(--silver-dim);
+  background: #0d0c14;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   JOURNEY & FLIGHT TRAJECTORY
+   ========================================================================== */
+.timeline-wrap {
+  position: relative;
+  padding-left: 48px;
+  max-width: 800px;
+}
+.timeline-laser {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: var(--border-medium);
+}
+.timeline-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #f5e6c8, #06b6d4, #8b5cf6);
+  transform-origin: top;
+  transform: scaleY(0);
+  box-shadow: 0 0 14px var(--cyan-glow);
+}
+.timeline-beacon {
+  position: absolute;
+  left: -5px;
+  top: -4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gold-champagne);
+  box-shadow: 0 0 20px 4px rgba(245, 230, 200, 0.8), 0 0 8px #fff;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 32px;
+  padding: 24px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0.3;
+  transform: translateX(28px);
+  transition: opacity 0.7s var(--ease-base), transform 0.7s var(--ease-base), border-color 0.7s var(--ease-base);
+}
+.timeline-step.active {
+  opacity: 1;
+  transform: none;
+  border-color: var(--border-medium);
+}
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 30px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #000;
+  border: 2px solid var(--border-medium);
+  transition: background-color 0.5s var(--ease-base), border-color 0.5s var(--ease-base), box-shadow 0.5s var(--ease-base);
+}
+.timeline-step.active::before {
+  background: var(--gold-champagne);
+  border-color: var(--gold-champagne);
+  box-shadow: 0 0 16px var(--gold-champagne), 0 0 6px #fff;
+}
+
+.timeline-step h3 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.timeline-step p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-muted);
+}
+.timeline-step ol {
+  padding-left: 20px;
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   INTERACTIVE ORBITAL MISSION TERMINAL
+   ========================================================================== */
+.terminal-card {
+  border: 1px solid var(--border-medium);
+  border-radius: 16px;
+  background: #06050a;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.85), 0 0 24px rgba(245, 230, 200, 0.05);
+  overflow: hidden;
+  margin-top: 48px;
+}
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: #100f18;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.terminal-dot.red { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27c93f; }
+
+.terminal-title {
+  font-size: 12px;
+  font-family: "Geist Mono", monospace;
+  color: var(--gold-champagne);
+}
+.terminal-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.terminal-chip-btn {
+  background: #181624;
+  border: 1px solid var(--border-medium);
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: "Geist Mono", monospace;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.terminal-chip-btn:hover {
+  color: #000;
+  background: var(--gold-champagne);
+}
+
+.terminal-body {
+  padding: 20px;
+  font-family: "Geist Mono", monospace;
+  font-size: 13px;
+  line-height: 22px;
+  color: #e6e4dc;
+  min-height: 220px;
+  max-height: 340px;
+  overflow-y: auto;
+}
+.terminal-output {
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+}
+.terminal-prompt-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.terminal-prompt-user {
+  color: var(--cyan-glow);
+  font-weight: 600;
+}
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Geist Mono", monospace;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   FAQ SECTION (Meeting A2 & Objection Handling)
+   ========================================================================== */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-width: 820px;
+}
+.faq-item {
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: border-color var(--duration-hover) var(--ease-base);
+}
+.faq-item:hover {
+  border-color: var(--border-medium);
+}
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+.faq-trigger svg {
+  color: var(--gold-champagne);
+  transition: transform 0.3s var(--ease-base);
+  flex-shrink: 0;
+}
+.faq-item.open .faq-trigger svg {
+  transform: rotate(180deg);
+}
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s var(--ease-base), padding 0.4s var(--ease-base);
+  padding: 0 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 22px;
+}
+.faq-item.open .faq-content {
+  max-height: 220px;
+  padding-bottom: 20px;
+}
+
+/* ==========================================================================
+   CONTACT & UPLINK SECTION
+   ========================================================================== */
+.contact-fin {
+  padding: 48px;
+  border: 1px solid var(--border-medium);
+  border-radius: 20px;
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+}
+.contact-fin::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 230, 200, 0.18) 0%, rgba(6, 182, 212, 0.08) 45%, transparent 70%);
+  pointer-events: none;
+}
+.contact-form {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 680px) {
+  .contact-fin {
+    padding: 24px;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-field.full {
+  grid-column: 1 / -1;
+}
+.form-label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.form-input, .form-textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-medium);
+  background: #0d0c14;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--duration-hover) var(--ease-base);
+}
+.form-input:focus, .form-textarea:focus {
+  border-color: var(--gold-champagne);
+  box-shadow: 0 0 12px rgba(245, 230, 200, 0.25);
+}
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Toast alert */
+.toast-notice {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px 18px;
+  background: #14131c;
+  border: 1px solid var(--gold-champagne);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.85), 0 0 20px rgba(245, 230, 200, 0.2);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.4s var(--ease-base), opacity 0.4s var(--ease-base);
+  pointer-events: none;
+}
+.toast-notice.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ==========================================================================
+   FOOTER & MODAL
+   ========================================================================== */
+footer {
+  padding: 48px 0 96px;
+  border-top: 1px solid var(--border-subtle);
+  background: #000000;
+  position: relative;
+  z-index: 10;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+.footer-links a:hover {
+  color: var(--gold-champagne);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(12px);
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal-overlay.open {
+  display: flex;
+}
+.modal-card {
+  background: #100f16;
+  border: 1px solid var(--border-medium);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 540px;
+  width: 100%;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.modal-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rv {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s var(--ease-base), transform 0.8s var(--ease-base);
+}
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: opacity 0.01s !important;
+  }
+  .rv, .timeline-step, .tagline-word {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  #gl-canvas {
+    opacity: 0.85;
+  }
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<canvas id="gl-canvas" aria-hidden="true"></canvas>
+
+<!-- Custom Cursor Elements -->
+<div class="cur-ring" id="cur-ring" aria-hidden="true"></div>
+<div class="cur-dot" id="cur-dot" aria-hidden="true"></div>
+
+<!-- Interstellar Deep Space Telemetry HUD -->
+<div class="space-hud" aria-hidden="true">
+  <div class="space-hud-header">
+    <span id="hud-sector">Sector 01: Orbit Station</span>
+    <span class="mono" id="hud-fps">60 FPS</span>
+  </div>
+  <div class="space-hud-track">
+    <div class="space-hud-bar" id="hud-bar"></div>
+  </div>
+  <div class="space-hud-metrics">
+    <span id="hud-nav-status">AWS US-East-1 · Stable</span>
+    <span class="mono" id="hud-distance">0.0 AU</span>
+  </div>
+</div>
+
+<!-- Floating Navigation Bar -->
+<nav aria-label="Orbital Command Navigation">
+  <a class="nav-brand" href="#top">
+    <span class="nav-brand-status"></span>
+    <strong>Manikanta N.</strong>
+  </a>
+  <div class="nav-links">
+    <a href="#architecture">Architecture</a>
+    <a href="#skills">Cloud Skills</a>
+    <a href="#journey" class="hide-sm">Trajectory</a>
+    <a href="#projects">Projects</a>
+    <a href="#terminal" class="hide-sm">Terminal</a>
+    <a href="#faq" class="hide-sm">FAQ</a>
+  </div>
+  <a class="nav-cta" href="#contact">Contact</a>
+</nav>
+
+<main id="main-content">
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="hero-pill-ping"></span>
+          <span>ORBITAL DEPLOYMENT · OPEN FOR INTERNSHIPS</span>
+        </div>
+        
+        <h1 class="hero-heading">
+          Engineering high availability cloud systems and mission critical Node.js backends.
+        </h1>
+        
+        <p class="hero-sub">
+          B.Tech CSE student at CMR Technical Campus. Architecting multi-AZ AWS infrastructure, automated container orchestration, and fault tolerant microservices built for continuous uptime.
+        </p>
+        
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:manikantanagulapalli300@gmail.com?subject=Cloud%20DevOps%20Internship%20Inquiry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Email me
+          </a>
+          <a class="btn btn-silver" href="https://smart-canteen-oo0l.onrender.com/" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            Open Smart Canteen live
+          </a>
+          <button class="btn" id="btn-quick-terminal" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            Launch Terminal
+          </button>
+        </div>
+        
+        <div class="hero-proof-strip">
+          <div class="hero-proof-item">
+            <span class="hero-proof-value">12+</span>
+            <span class="hero-proof-label">AWS Services Mastered</span>
+          </div>
+          <div class="hero-proof-item">
+            <span class="hero-proof-value">1 Live</span>
+            <span class="hero-proof-label">Production Backend (Render)</span>
+          </div>
+          <div class="hero-proof-item">
+            <span class="hero-proof-value">12h</span>
+            <span class="hero-proof-label">National Hackathon Finalist</span>
+          </div>
+          <div class="hero-proof-item">
+            <span class="hero-proof-value">7.0</span>
+            <span class="hero-proof-label">B.Tech CSE CGPA</span>
+          </div>
+        </div>
+        
+        <p class="hero-space-tip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+          Orbital station at the top: Scroll down to trigger gravitational collapse into the Interstellar Black Hole. Drag to rotate.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== B11 MANDATORY TAGLINE REVEAL SECTION ==================== -->
+  <section class="tagline-section" id="manifesto">
+    <div class="wrap">
+      <div class="tagline-box">
+        <span class="tagline-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          Core Engineering Doctrine
+        </span>
+        <div class="tagline-text" id="tagline-reveal">
+          From bare metal Linux kernels to distributed cloud horizons: every route optimized for sub millisecond latency, every compute fleet hardened against failure, and every system built to endure at planetary scale.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE TOPOLOGY VISUALIZER ==================== -->
+  <section id="architecture">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="caption-3">Cloud Infrastructure Blueprint</span>
+        <h2 class="heading-2">Enterprise AWS Architecture</h2>
+        <p>Interactive topology of how my mastered AWS services interconnect in production for fault-tolerant and secure workloads. Click any cloud node to inspect its operational role.</p>
+      </div>
+
+      <div class="arch-visualizer-card rv">
+        <div class="arch-header">
+          <div>
+            <span class="tag tag-cyan">AWS Multi-AZ VPC Reference Architecture</span>
+            <h3 class="title-1" style="margin-top: 8px;">Distributed Compute, Edge Caching & Persistent Storage</h3>
+          </div>
+          <div class="arch-controls">
+            <button class="btn btn-sm btn-silver" id="btn-arch-flow" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Simulate Traffic Pulse
+            </button>
+            <button class="btn btn-sm" id="btn-arch-reset" type="button">Reset View</button>
+          </div>
+        </div>
+
+        <div class="arch-canvas-container">
+          <div class="arch-grid-bg"></div>
+          
+          <div class="arch-tiers">
+            <!-- Tier 1: Ingress & Edge -->
+            <div class="arch-col">
+              <div class="arch-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+                Ingress & Edge
+              </div>
+              <div class="arch-node active" data-node="elb" data-title="AWS ELB Load Balancer" data-desc="Application Load Balancer (ALB) terminates SSL/TLS, routes HTTP/HTTPS requests with health checks to healthy targets." data-status="High Availability">
+                <div class="arch-node-name">
+                  <span>ELB (ALB / NLB)</span>
+                  <span class="arch-node-tag">Networking</span>
+                </div>
+                <div class="arch-node-desc">Traffic routing & SSL offloading</div>
+              </div>
+              <div class="arch-node" data-node="vpn" data-title="AWS VPN Gateway" data-desc="Secures administrator and DevOps ingress into private VPC subnets via encrypted Client VPN and Site-to-Site tunnels." data-status="Encrypted Tunnel">
+                <div class="arch-node-name">
+                  <span>AWS VPN</span>
+                  <span class="arch-node-tag">Security</span>
+                </div>
+                <div class="arch-node-desc">Private network access tunnel</div>
+              </div>
+              <div class="arch-node" data-node="s3" data-title="Amazon S3 Bucket" data-desc="Object storage for static assets, build distributions, and encrypted data backups with versioning and lifecycle policies." data-status="11 9s Durability">
+                <div class="arch-node-name">
+                  <span>Amazon S3 Bucket</span>
+                  <span class="arch-node-tag">Storage</span>
+                </div>
+                <div class="arch-node-desc">Static web & asset repository</div>
+              </div>
+            </div>
+
+            <!-- Tier 2: Compute & Containers -->
+            <div class="arch-col">
+              <div class="arch-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                Compute & Clusters
+              </div>
+              <div class="arch-node" data-node="eks" data-title="Amazon EKS" data-desc="Elastic Kubernetes Service manages production container orchestration, auto-scaling worker nodes, and declarative pods." data-status="Kubernetes Engine">
+                <div class="arch-node-name">
+                  <span>Amazon EKS</span>
+                  <span class="arch-node-tag">Containers</span>
+                </div>
+                <div class="arch-node-desc">Managed Kubernetes cluster</div>
+              </div>
+              <div class="arch-node" data-node="ecs" data-title="Amazon ECS" data-desc="Elastic Container Service with AWS Fargate serverless compute to launch Docker containers without managing EC2 instances." data-status="Serverless Tasks">
+                <div class="arch-node-name">
+                  <span>Amazon ECS</span>
+                  <span class="arch-node-tag">Containers</span>
+                </div>
+                <div class="arch-node-desc">Docker microservices runtime</div>
+              </div>
+              <div class="arch-node" data-node="ec2" data-title="Amazon EC2" data-desc="Elastic Compute Cloud virtual servers configured with secure security groups, Nginx reverse proxy, and systemd units." data-status="Compute Fleet">
+                <div class="arch-node-name">
+                  <span>Amazon EC2</span>
+                  <span class="arch-node-tag">Compute</span>
+                </div>
+                <div class="arch-node-desc">Virtual instances with SSM</div>
+              </div>
+            </div>
+
+            <!-- Tier 3: Isolated VPC & Data -->
+            <div class="arch-col">
+              <div class="arch-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                VPC & Databases
+              </div>
+              <div class="arch-node" data-node="vpc" data-title="Amazon VPC" data-desc="Virtual Private Cloud with isolated public and private CIDR subnets, Route Tables, Internet Gateways, and NAT Gateways." data-status="Network Isolation">
+                <div class="arch-node-name">
+                  <span>Amazon VPC</span>
+                  <span class="arch-node-tag">Network</span>
+                </div>
+                <div class="arch-node-desc">Multi-AZ subnets & security groups</div>
+              </div>
+              <div class="arch-node" data-node="rds" data-title="Amazon RDS" data-desc="Managed Relational Database Service supporting automated Multi-AZ replication, failover, and point-in-time recovery." data-status="Automated Backups">
+                <div class="arch-node-name">
+                  <span>Amazon RDS</span>
+                  <span class="arch-node-tag">Database</span>
+                </div>
+                <div class="arch-node-desc">Managed PostgreSQL / MySQL</div>
+              </div>
+              <div class="arch-node" data-node="aurora" data-title="Amazon Aurora" data-desc="High-performance cloud-native distributed relational database offering up to 5x throughput of standard MySQL." data-status="Continuous Replication">
+                <div class="arch-node-name">
+                  <span>Amazon Aurora</span>
+                  <span class="arch-node-tag">Database</span>
+                </div>
+                <div class="arch-node-desc">Low-latency distributed database</div>
+              </div>
+              <div class="arch-node" data-node="ebs" data-title="Amazon EBS" data-desc="Elastic Block Store persistent volumes attached to EC2 instances for high IOPS database and filesystem storage." data-status="Persistent Block">
+                <div class="arch-node-name">
+                  <span>Amazon EBS</span>
+                  <span class="arch-node-tag">Block Storage</span>
+                </div>
+                <div class="arch-node-desc">High IOPS SSD snapshot storage</div>
+              </div>
+            </div>
+
+            <!-- Tier 4: Security & Governance -->
+            <div class="arch-col">
+              <div class="arch-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Security & Observability
+              </div>
+              <div class="arch-node" data-node="iam" data-title="AWS IAM" data-desc="Identity and Access Management enforcing least-privilege roles, OIDC token authentication, and zero hardcoded credentials." data-status="Zero Trust Auth">
+                <div class="arch-node-name">
+                  <span>AWS IAM</span>
+                  <span class="arch-node-tag">Security</span>
+                </div>
+                <div class="arch-node-desc">Role-based access & policies</div>
+              </div>
+              <div class="arch-node" data-node="cloudwatch" data-title="Amazon CloudWatch" data-desc="Real-time infrastructure metrics collection, CPU/Memory alarms, log group forwarding, and proactive budget anomaly detection." data-status="Telemetry Stream">
+                <div class="arch-node-name">
+                  <span>Amazon CloudWatch</span>
+                  <span class="arch-node-tag">Monitoring</span>
+                </div>
+                <div class="arch-node-desc">Metrics, alarms & centralized logs</div>
+              </div>
+              <div class="arch-node" data-node="cloudtrail" data-title="AWS CloudTrail" data-desc="Records every API call across the AWS account for governance, compliance auditing, operational troubleshooting, and security tracking." data-status="Audit Logging">
+                <div class="arch-node-name">
+                  <span>AWS CloudTrail</span>
+                  <span class="arch-node-tag">Governance</span>
+                </div>
+                <div class="arch-node-desc">Immutable API activity ledger</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="arch-inspector-bar">
+            <div class="arch-inspector-content">
+              <span class="arch-status-pill" id="arch-inspect-status">High Availability</span>
+              <div>
+                <strong id="arch-inspect-title">AWS ELB Load Balancer</strong>
+                <span style="color: var(--text-muted); font-size: 13px; margin-left: 8px;" id="arch-inspect-desc">Application Load Balancer terminates SSL/TLS, routes HTTP/HTTPS requests with health checks.</span>
+              </div>
+            </div>
+            <span class="mono" style="font-size: 11px; color: var(--cyan-glow);">Status: ONLINE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="caption-3">Technical Competencies</span>
+        <h2 class="heading-2">Skills & Cloud Matrix</h2>
+        <p>Comprehensive stack spanning AWS infrastructure, container orchestration, Linux systems administration, and backend web engineering.</p>
+      </div>
+
+      <div class="skills-controls rv">
+        <div class="skills-filter-tabs" id="skill-filters">
+          <button class="filter-tab active" data-filter="all" type="button">All Skills</button>
+          <button class="filter-tab" data-filter="cloud" type="button">AWS Core & Storage</button>
+          <button class="filter-tab" data-filter="containers" type="button">Containers & Compute</button>
+          <button class="filter-tab" data-filter="networking" type="button">Networking & Security</button>
+          <button class="filter-tab" data-filter="backend" type="button">Backend & Systems</button>
+        </div>
+
+        <div class="skills-search-wrap">
+          <svg class="skills-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" class="skills-search-input" id="skill-search" placeholder="Filter skills (e.g., S3, VPC, EKS)..." aria-label="Search skills">
+        </div>
+      </div>
+
+      <div class="skills-deck rv" id="skills-deck">
+        <!-- AWS S3 -->
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-top">
+            <div class="skill-icon-box silver">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <span class="skill-status-tag silver">Hands-On</span>
+          </div>
+          <h3 class="skill-title">Amazon S3 Bucket</h3>
+          <p class="skill-role">Static web hosting, versioning, bucket policies, and cross-region asset storage.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Object Storage</span>
+            <span class="skill-micro-tag">Bucket Policies</span>
+            <span class="skill-micro-tag">Lifecycle Rules</span>
+          </div>
+        </div>
+
+        <!-- AWS EBS -->
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-top">
+            <div class="skill-icon-box silver">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <span class="skill-status-tag verified">Configured</span>
+          </div>
+          <h3 class="skill-title">Amazon EBS</h3>
+          <p class="skill-role">Elastic Block Store volumes (gp3/io2), snapshot retention, and EC2 persistent attachments.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Block Storage</span>
+            <span class="skill-micro-tag">Snapshots</span>
+            <span class="skill-micro-tag">IOPS Optimization</span>
+          </div>
+        </div>
+
+        <!-- Amazon RDS -->
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-top">
+            <div class="skill-icon-box cyan">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+            </div>
+            <span class="skill-status-tag cyan">Architected</span>
+          </div>
+          <h3 class="skill-title">Amazon RDS</h3>
+          <p class="skill-role">Relational Database Service for PostgreSQL and MySQL with automated Multi-AZ failover.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">PostgreSQL</span>
+            <span class="skill-micro-tag">Multi-AZ</span>
+            <span class="skill-micro-tag">Automated Backups</span>
+          </div>
+        </div>
+
+        <!-- Amazon Aurora -->
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-top">
+            <div class="skill-icon-box cyan">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <span class="skill-status-tag cyan">High Throughput</span>
+          </div>
+          <h3 class="skill-title">Amazon Aurora</h3>
+          <p class="skill-role">High throughput cloud-native relational engine with 6-way storage replication across 3 AZs.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Cloud-Native SQL</span>
+            <span class="skill-micro-tag">Aurora Serverless</span>
+            <span class="skill-micro-tag">Read Replicas</span>
+          </div>
+        </div>
+
+        <!-- Amazon VPC -->
+        <div class="skill-card" data-cat="networking">
+          <div class="skill-top">
+            <div class="skill-icon-box violet">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </div>
+            <span class="skill-status-tag verified">Configured</span>
+          </div>
+          <h3 class="skill-title">Amazon VPC</h3>
+          <p class="skill-role">Virtual Private Cloud subnets, route tables, internet gateways, and security group isolation.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">CIDR Planning</span>
+            <span class="skill-micro-tag">NAT Gateway</span>
+            <span class="skill-micro-tag">Security Groups</span>
+          </div>
+        </div>
+
+        <!-- AWS ELB Load Balancer -->
+        <div class="skill-card" data-cat="networking">
+          <div class="skill-top">
+            <div class="skill-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+            </div>
+            <span class="skill-status-tag verified">Configured</span>
+          </div>
+          <h3 class="skill-title">ELB Load Balancer</h3>
+          <p class="skill-role">Application and Network Load Balancers with target groups, path routing, and ACM SSL certs.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">ALB & NLB</span>
+            <span class="skill-micro-tag">SSL Offload</span>
+            <span class="skill-micro-tag">Health Checks</span>
+          </div>
+        </div>
+
+        <!-- AWS VPN -->
+        <div class="skill-card" data-cat="networking">
+          <div class="skill-top">
+            <div class="skill-icon-box violet">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <span class="skill-status-tag verified">Secured</span>
+          </div>
+          <h3 class="skill-title">AWS VPN</h3>
+          <p class="skill-role">Secure administrator tunnels, AWS Client VPN endpoints, and Site-to-Site IPsec connectivity.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Client VPN</span>
+            <span class="skill-micro-tag">Site-to-Site</span>
+            <span class="skill-micro-tag">IPsec Tunnel</span>
+          </div>
+        </div>
+
+        <!-- AWS IAM -->
+        <div class="skill-card" data-cat="networking">
+          <div class="skill-top">
+            <div class="skill-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <span class="skill-status-tag verified">Hands-On</span>
+          </div>
+          <h3 class="skill-title">AWS IAM</h3>
+          <p class="skill-role">Identity and Access Management: least privilege policies, assume-role permissions, and OIDC.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">RBAC</span>
+            <span class="skill-micro-tag">IAM Roles</span>
+            <span class="skill-micro-tag">Zero Hardcoded Keys</span>
+          </div>
+        </div>
+
+        <!-- Amazon CloudWatch -->
+        <div class="skill-card" data-cat="networking">
+          <div class="skill-top">
+            <div class="skill-icon-box cyan">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <span class="skill-status-tag cyan">Hands-On</span>
+          </div>
+          <h3 class="skill-title">Amazon CloudWatch</h3>
+          <p class="skill-role">Infrastructure telemetry, custom metric filters, alarm triggers, and log group dashboards.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Metric Alarms</span>
+            <span class="skill-micro-tag">Log Groups</span>
+            <span class="skill-micro-tag">Budget Alerts</span>
+          </div>
+        </div>
+
+        <!-- AWS CloudTrail -->
+        <div class="skill-card" data-cat="networking">
+          <div class="skill-top">
+            <div class="skill-icon-box violet">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <span class="skill-status-tag verified">Audited</span>
+          </div>
+          <h3 class="skill-title">AWS CloudTrail</h3>
+          <p class="skill-role">Governance audit ledger tracking every API interaction, user identity, and policy modification.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Audit Trail</span>
+            <span class="skill-micro-tag">Governance</span>
+            <span class="skill-micro-tag">Forensic Logs</span>
+          </div>
+        </div>
+
+        <!-- Amazon ECS -->
+        <div class="skill-card" data-cat="containers">
+          <div class="skill-top">
+            <div class="skill-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <span class="skill-status-tag verified">Configured</span>
+          </div>
+          <h3 class="skill-title">Amazon ECS</h3>
+          <p class="skill-role">Elastic Container Service running containerized tasks with AWS Fargate serverless execution.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Task Definitions</span>
+            <span class="skill-micro-tag">AWS Fargate</span>
+            <span class="skill-micro-tag">Service Discovery</span>
+          </div>
+        </div>
+
+        <!-- Amazon EKS -->
+        <div class="skill-card" data-cat="containers">
+          <div class="skill-top">
+            <div class="skill-icon-box cyan">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>
+            </div>
+            <span class="skill-status-tag cyan">Active Learning</span>
+          </div>
+          <h3 class="skill-title">Amazon EKS</h3>
+          <p class="skill-role">Elastic Kubernetes Service: cluster provisioning, Helm charts, node groups, and ingress controllers.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Kubernetes</span>
+            <span class="skill-micro-tag">Node Groups</span>
+            <span class="skill-micro-tag">Pod Scaling</span>
+          </div>
+        </div>
+
+        <!-- Node.js & Express -->
+        <div class="skill-card" data-cat="backend">
+          <div class="skill-top">
+            <div class="skill-icon-box silver">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            </div>
+            <span class="skill-status-tag verified">Production</span>
+          </div>
+          <h3 class="skill-title">Node.js & Express.js</h3>
+          <p class="skill-role">RESTful API architecture, middleware pipelines, JWT auth, and async backend services.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">REST APIs</span>
+            <span class="skill-micro-tag">Async/Await</span>
+            <span class="skill-micro-tag">Render Deploy</span>
+          </div>
+        </div>
+
+        <!-- Linux & Web Servers -->
+        <div class="skill-card" data-cat="backend">
+          <div class="skill-top">
+            <div class="skill-icon-box silver">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            </div>
+            <span class="skill-status-tag verified">Hands-On</span>
+          </div>
+          <h3 class="skill-title">Linux & Nginx / Apache</h3>
+          <p class="skill-role">Ubuntu/Debian server administration, reverse proxy configurations, systemd, and SSL certbot.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">Bash Scripting</span>
+            <span class="skill-micro-tag">Nginx Proxy</span>
+            <span class="skill-micro-tag">Systemd Units</span>
+          </div>
+        </div>
+
+        <!-- Git, GitHub & CI/CD -->
+        <div class="skill-card" data-cat="backend">
+          <div class="skill-top">
+            <div class="skill-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+            </div>
+            <span class="skill-status-tag verified">Daily Workflow</span>
+          </div>
+          <h3 class="skill-title">Git & GitHub Actions</h3>
+          <p class="skill-role">Version control, branch protection rules, automated test runners, and deployment triggers.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">CI/CD Pipelines</span>
+            <span class="skill-micro-tag">Git Flow</span>
+            <span class="skill-micro-tag">Automated Tests</span>
+          </div>
+        </div>
+
+        <!-- Core Programming -->
+        <div class="skill-card" data-cat="backend">
+          <div class="skill-top">
+            <div class="skill-icon-box silver">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <span class="skill-status-tag silver">B.Tech Core</span>
+          </div>
+          <h3 class="skill-title">Python, Java & C</h3>
+          <p class="skill-role">Data structures, object oriented design patterns, memory fundamentals, and automation scripts.</p>
+          <div class="skill-footer-tags">
+            <span class="skill-micro-tag">OOP & Algorithms</span>
+            <span class="skill-micro-tag">Scripting</span>
+            <span class="skill-micro-tag">Systems Logic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== JOURNEY & FLIGHT TRAJECTORY ==================== -->
+  <section id="journey">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="caption-3">Flight Trajectory</span>
+        <h2 class="heading-2">Engineering Milestones</h2>
+        <p>Scroll down through my academic and engineering timeline. Every waypoint represents verified code delivered.</p>
+      </div>
+
+      <div class="timeline-wrap" id="timeline-container">
+        <div class="timeline-laser">
+          <div class="timeline-fill" id="timeline-fill"></div>
+          <div class="timeline-beacon" id="timeline-beacon"></div>
+        </div>
+
+        <div class="timeline-step">
+          <span class="tag tag-silver">Waypoint 01 · Completed</span>
+          <h3>Computer Science Foundations</h3>
+          <p>Mastered core systems fundamentals in C, Java, Python, and JavaScript alongside Linux OS internals and Git workflows. Pursuing B.Tech CSE at CMR Technical Campus, Telangana with a 7.0 CGPA (Intermediate 75%, 10th Standard 8.3 CGPA).</p>
+        </div>
+
+        <div class="timeline-step">
+          <span class="tag tag-live">Waypoint 02 · Production Live</span>
+          <h3>Smart Canteen Backend Architecture</h3>
+          <p>Architected a complete Node.js and Express RESTful API with structured routing for users, canteen food inventories, shopping carts, and dynamic order status workflows.</p>
+          <div class="chips-row">
+            <span class="chip"><span class="chip-dot"></span>Node.js</span>
+            <span class="chip"><span class="chip-dot silver"></span>Express REST</span>
+            <span class="chip"><span class="chip-dot cyan"></span>Cart Workflows</span>
+            <span class="chip"><span class="chip-dot"></span>Hosted on Render</span>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <span class="tag tag-cyan">Waypoint 03 · Hackathon Finalist</span>
+          <h3>National Hackathon: DeVert A Thon 26</h3>
+          <p>Competed in a rigorous 12 hour national hackathon at MRCET. Co-engineered the concept for the AI Driven Multilingual Resume Architect: transforming spoken Telugu and English audio into structured ATS compliant resumes.</p>
+        </div>
+
+        <div class="timeline-step">
+          <span class="tag tag-gold">Waypoint 04 · Infrastructure</span>
+          <h3>AWS Cloud & Linux Server Hardening</h3>
+          <p>Configured Amazon EC2 instances, structured S3 object buckets, and established CloudWatch alarms alongside Nginx and Apache reverse proxy deployments.</p>
+        </div>
+
+        <div class="timeline-step">
+          <span class="tag tag-violet">Waypoint 05 · Active Roadmap</span>
+          <h3>AWS Production DevOps Roadmap</h3>
+          <p>Five planned milestone implementations currently in development:</p>
+          <ol>
+            <li>Static web deployment on Amazon S3 with CloudFront edge caching, HTTPS, and DNS.</li>
+            <li>Zero open ports: Private EC2 instance managed via AWS Systems Manager (SSM) Session Manager.</li>
+            <li>Automated cost optimization: CloudWatch budget alerts with Lambda automated instance stop.</li>
+            <li>Secretless authentication: Node.js backend using AWS IAM Instance Profiles without stored keys.</li>
+            <li>Continuous Infrastructure as Code: Terraform pipeline with GitHub Actions and AWS IAM OIDC.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PROJECTS ==================== -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="caption-3">Deployed Systems</span>
+        <h2 class="heading-2">Featured Projects</h2>
+        <p>Production backends, hackathon architectures, and infrastructure blueprints.</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Smart Canteen -->
+        <article class="card tilt rv">
+          <span class="tag tag-live">Built & Shipped Live</span>
+          <h3 class="heading-5" style="margin: 12px 0 8px;">Smart Canteen Management System</h3>
+          <p class="body-6" style="color: var(--text-muted); margin-bottom: 16px;">
+            A full-featured online canteen management web application where campus users browse food items, manage a dynamic shopping cart, place orders, and track order fulfillment in real-time.
+          </p>
+          <ul style="padding-left: 20px; color: var(--text-muted); font-size: 14px; line-height: 22px; margin-bottom: 20px;">
+            <li>Structured Node.js and Express REST API endpoints with status codes</li>
+            <li>Cart session management and status state-machine transitions</li>
+            <li>Designed for separate student customer and canteen admin operational roles</li>
+            <li>Continuous deployment on Render cloud platform</li>
+          </ul>
+          <div class="chips-row" style="margin-bottom: 24px;">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Render Cloud</span>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <a class="btn btn-primary btn-sm" href="https://smart-canteen-oo0l.onrender.com/" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              View Live Deployment
+            </a>
+            <a class="btn btn-silver btn-sm" href="https://github.com/manikantanagulapalli200704/smart-canteen" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Hackathon Project -->
+        <article class="card tilt rv">
+          <span class="tag tag-cyan">National Hackathon Project</span>
+          <h3 class="heading-5" style="margin: 12px 0 8px;">AI Multilingual Resume Architect</h3>
+          <p class="body-6" style="color: var(--text-muted); margin-bottom: 16px;">
+            An automated candidate intake system concept built at DeVert A Thon 26 (MRCET). Transforms raw voice or video spoken answers in mixed Telugu and English into structured, ATS compliant resumes.
+          </p>
+          <ul style="padding-left: 20px; color: var(--text-muted); font-size: 14px; line-height: 22px; margin-bottom: 20px;">
+            <li>Built in a team under a high pressure 12-hour hackathon sprint</li>
+            <li>Designed for non traditional job seekers speaking regional dialects</li>
+            <li>Structured schema extraction for technical and vocational credentials</li>
+            <li>Awarded national level hackathon finalist recognition</li>
+          </ul>
+          <div class="chips-row" style="margin-bottom: 24px;">
+            <span class="chip">AI Audio Processing</span>
+            <span class="chip">Speech to Text</span>
+            <span class="chip">ATS Optimization</span>
+            <span class="chip">Hackathon Sprint</span>
+          </div>
+          <span class="tag tag-silver">Concept & Prototyped Architecture</span>
+        </article>
+      </div>
+
+      <!-- Additional Roadmap Concepts -->
+      <div class="card rv" style="margin-top: 16px;">
+        <span class="tag tag-violet">Engineering Pipeline Concepts</span>
+        <h4 class="title-2" style="margin: 8px 0 4px;">Future Architecture Under Research</h4>
+        <p class="body-6" style="color: var(--text-muted);">
+          1. <strong>AI Class Organizer</strong>: automated academic lecture transcription, material categorization, and semantic search.
+          <br>
+          2. <strong>NEXUS Remote</strong>: low latency peer-to-peer remote device orchestration powered by WebRTC, Python microservices, and Flutter.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ORBITAL MISSION TERMINAL ==================== -->
+  <section id="terminal">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="caption-3">Interactive Shell</span>
+        <h2 class="heading-2">Orbital Mission Terminal</h2>
+        <p>Type commands or click quick-run chips to query my technical stack, system status, and deployment logs directly.</p>
+      </div>
+
+      <div class="terminal-card rv">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+          <span class="terminal-title">manikanta@interstellar-node:~$</span>
+          <div class="terminal-chips">
+            <button class="terminal-chip-btn" data-cmd="skills" type="button">skills</button>
+            <button class="terminal-chip-btn" data-cmd="projects" type="button">projects</button>
+            <button class="terminal-chip-btn" data-cmd="roadmap" type="button">roadmap</button>
+            <button class="terminal-chip-btn" data-cmd="blackhole" type="button">blackhole</button>
+            <button class="terminal-chip-btn" data-cmd="ping" type="button">ping aws</button>
+            <button class="terminal-chip-btn" data-cmd="help" type="button">help</button>
+          </div>
+        </div>
+
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-output" id="terminal-output">Welcome to Manikanta's Interstellar Shell [Version 3.0.0-gargantua]
+Gravitational telemetry connected: US-East-1 AWS Cluster.
+Type 'help' for command list, or click chips above to inspect infrastructure.
+</div>
+          <div class="terminal-prompt-line">
+            <span class="terminal-prompt-user">mani@interstellar:~$</span>
+            <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="caption-3">Frequently Asked Questions</span>
+        <h2 class="heading-2">Internship & Engineering FAQs</h2>
+        <p>Specific answers regarding my technical readiness, internship availability, and engineering approach.</p>
+      </div>
+
+      <div class="faq-grid rv">
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>What roles and internship formats are you seeking?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            I am actively seeking Cloud Engineering, DevOps Engineering, and Backend Engineering internships (both remote and on-site). I am prepared to contribute to containerized deployments, AWS infrastructure management, CI/CD pipelines, and Node.js REST services.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>What is your hands-on experience with AWS cloud services?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            I have practical hands-on experience provisioning and configuring Amazon S3 buckets, EC2 compute instances, CloudWatch metrics and alarms, and structuring IAM least-privilege policies. Additionally, I have studied and architected topologies for VPC subnets, ELB load balancers, RDS/Aurora databases, EBS persistent storage, and ECS/EKS container runtimes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>Can you build backends as well as manage infrastructure?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            Yes. I built Smart Canteen from scratch in Node.js and Express, implementing routing, business logic, cart state, and deployment to Render. This enables me to understand both sides of engineering: the code developers write and the cloud platforms required to run it reliably.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>How do you approach cloud security and secret management?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            I enforce zero hardcoded credentials. By using IAM Instance Profiles and OIDC tokens for GitHub Actions, cloud workloads assume short-lived credentials rather than storing static API keys. All private database and application tiers are isolated inside private VPC subnets behind Security Groups.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>What is your current academic timeline and availability?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            I am currently a B.Tech CSE student at CMR Technical Campus, Telangana with a 7.0 CGPA. I am available immediately for part-time internships or upcoming semester internship blocks, with dedicated hours for engineering tasks and team standups.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>Where can I verify your code and live deployments?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            Smart Canteen is live on Render at smart-canteen-oo0l.onrender.com, and its full source code is publicly accessible on GitHub at github.com/manikantanagulapalli200704/smart-canteen.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & UPLINK ==================== -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-fin rv">
+        <span class="tag tag-gold">Direct Uplink</span>
+        <h2 class="heading-2" style="margin-top: 12px;">Open to Cloud & DevOps Internships</h2>
+        <p class="body-2" style="color: var(--text-muted); max-width: 620px; margin-top: 12px;">
+          Whether you have an internship opening, an infrastructure project, or want to discuss AWS deployment workflows, my communications uplink is open.
+        </p>
+
+        <div class="hero-actions" style="margin-top: 24px;">
+          <a class="btn btn-primary" href="mailto:manikantanagulapalli300@gmail.com?subject=Internship%20opportunity%20for%20Manikanta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Email Manikanta
+          </a>
+          <button class="btn btn-silver" id="btn-copy-email" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy Email Address
+          </button>
+          <a class="btn" href="https://www.linkedin.com/in/mani-kanta-9b77a1368" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            LinkedIn Profile
+          </a>
+          <a class="btn" href="https://github.com/manikantanagulapalli200704" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub
+          </a>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label class="form-label" for="form-name">Your Name</label>
+            <input type="text" class="form-input" id="form-name" placeholder="Engineering Lead / Recruiter" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="form-email">Work Email</label>
+            <input type="email" class="form-input" id="form-email" placeholder="lead@company.com" required>
+          </div>
+          <div class="form-field full">
+            <label class="form-label" for="form-message">Role Details / Project Scope</label>
+            <textarea class="form-textarea" id="form-message" placeholder="Details about your cloud, DevOps, or backend internship opportunity..." required></textarea>
+          </div>
+          <div class="form-field full">
+            <button class="btn btn-primary" type="submit" id="btn-submit-form" style="width: fit-content;">
+              Transmit Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-wrap">
+      <div>
+        <strong>Manikanta N.</strong> · B.Tech CSE · CMR Technical Campus, Telangana
+        <div style="font-size: 12px; color: var(--silver-dim); margin-top: 4px;">
+          Engineered with WebGL Three.js & Semantic Architecture. Interstellar Black Hole & AWS Topology.
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#top">Back to Orbit Top</a>
+        <a href="#" id="link-privacy">Privacy Policy</a>
+        <a href="#" id="link-terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Alert -->
+<div class="toast-notice" id="toast-notice" role="alert" aria-live="polite">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffd600" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="9 11 12 14 22 4"></polyline></svg>
+  <span id="toast-text">Email address copied to clipboard!</span>
+</div>
+
+<!-- Modal for Privacy/Terms -->
+<div class="modal-overlay" id="legal-modal" aria-hidden="true">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 class="title-2" id="modal-title">Privacy & Usage Policy</h3>
+      <button class="modal-close" id="modal-close-btn" type="button">&times;</button>
+    </div>
+    <p class="body-6" style="color: var(--text-muted); line-height: 22px;" id="modal-text">
+      This portfolio website is a personal showcase of engineering projects and academic credentials created by Manikanta N. No personal tracking cookies, third-party advertising beacons, or telemetry data are stored. Any messages transmitted through the contact form are dispatched directly via mailto client protocols.
+    </p>
+  </div>
+</div>
+
+<!-- Three.js Library -->
+
+<!-- Three.js and GSAP ScrollTrigger Dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- ==========================================================================
+   INTERSTELLAR GARGANTUA & GOLDEN PARTICLE UNIVERSE ENGINE
+   Cinematic WebGL Shader Accretion Disk, 3D Particle Physics, and GSAP Scrub
+   ========================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasPointerFine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  /* ==========================================================================
+     1. B11 MANDATORY TAGLINE REVEAL ENGINE
+     ========================================================================== */
+  var taglineEl = document.getElementById('tagline-reveal');
+  if (taglineEl) {
+    var rawText = taglineEl.textContent.trim().split(/\s+/);
+    taglineEl.innerHTML = rawText.map(function(word) {
+      var isKey = /cloud|latency|hardened|endure|scale|horizons/i.test(word);
+      var isCyan = /sub|millisecond|fleet|planetary/i.test(word);
+      var cls = isKey ? 'keyword highlight' : (isCyan ? 'cyan-glow' : '');
+      return '<span class="tagline-word ' + cls + '">' + word + '</span>';
+    }).join(' ');
+
+    var words = taglineEl.querySelectorAll('.tagline-word');
+    if (reducedMotion) {
+      words.forEach(function(w) { w.classList.add('illuminated'); });
+    } else {
+      var handleTaglineScroll = function() {
+        var rect = taglineEl.getBoundingClientRect();
+        var triggerY = window.innerHeight * 0.75;
+        if (rect.top < triggerY && rect.bottom > 0) {
+          var progress = Math.min(1, Math.max(0, (triggerY - rect.top) / (rect.height * 0.85)));
+          var countToLight = Math.floor(progress * words.length);
+          words.forEach(function(word, i) {
+            if (i <= countToLight) {
+              word.classList.add('illuminated');
+            } else {
+              word.classList.remove('illuminated');
+            }
+          });
+        }
+      };
+      window.addEventListener('scroll', function() {
+        requestAnimationFrame(handleTaglineScroll);
+      }, { passive: true });
+      handleTaglineScroll();
+    }
+  }
+
+  /* ==========================================================================
+     2. SCROLL REVEALS VIA INTERSECTION OBSERVER
+     ========================================================================== */
+  var reveals = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window && !reducedMotion) {
+    var rvObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          rvObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(function(el) { rvObserver.observe(el); });
+  } else {
+    reveals.forEach(function(el) { el.classList.add('in'); });
+  }
+
+  /* ==========================================================================
+     3. 3D TILT CARDS
+     ========================================================================== */
+  var tiltCards = document.querySelectorAll('.tilt');
+  tiltCards.forEach(function(card) {
+    card.addEventListener('pointermove', function(e) {
+      if (reducedMotion || e.pointerType === 'touch') return;
+      var rect = card.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      var rx = -((y / rect.height) - 0.5) * 12;
+      var ry = ((x / rect.width) - 0.5) * 12;
+      card.classList.add('moving');
+      card.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+      card.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+    });
+    card.addEventListener('pointerleave', function() {
+      card.classList.remove('moving');
+      card.style.setProperty('--rx', '0deg');
+      card.style.setProperty('--ry', '0deg');
+    });
+  });
+
+  /* ==========================================================================
+     4. CUSTOM CYBER CURSOR
+     ========================================================================== */
+  var ring = document.getElementById('cur-ring');
+  var dot = document.getElementById('cur-dot');
+  var mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+  var ringX = mouseX, ringY = mouseY;
+
+  if (hasPointerFine && ring && dot) {
+    window.addEventListener('pointermove', function(e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+    }, { passive: true });
+
+    var animateCursor = function() {
+      ringX += (mouseX - ringX) * 0.18;
+      ringY += (mouseY - ringY) * 0.18;
+      ring.style.transform = 'translate(' + ringX + 'px, ' + ringY + 'px)';
+      requestAnimationFrame(animateCursor);
+    };
+    animateCursor();
+
+    var interactives = document.querySelectorAll('a, button, input, textarea, .tilt, .arch-node, .skill-card, .filter-tab');
+    interactives.forEach(function(el) {
+      el.addEventListener('pointerenter', function() { ring.classList.add('active'); });
+      el.addEventListener('pointerleave', function() { ring.classList.remove('active'); });
+    });
+  }
+
+  /* ==========================================================================
+     5. THREE.JS CINEMATIC BLACK HOLE (GARGANTUA) & INTERACTIVE PARTICLE PHYSICS
+     ========================================================================== */
+  var canvas = document.getElementById('gl-canvas');
+  var renderer, scene, camera;
+  var okWebGL = true;
+
+  try {
+    renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      antialias: true,
+      alpha: true,
+      powerPreference: 'high-performance'
+    });
+  } catch (err) {
+    okWebGL = false;
+  }
+
+  if (okWebGL && typeof THREE !== 'undefined') {
+    // SnapDragon X / High-DPI performance cap (1.75 max DPR prevents overdraw)
+    var dpr = Math.min(window.devicePixelRatio || 1, 1.75);
+    renderer.setPixelRatio(dpr);
+    renderer.setSize(window.innerWidth, window.innerHeight, false);
+
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(48, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 0, 15);
+
+    // Reusable vector scratchpads (Zero GC allocations in render loop)
+    var _rayVec = new THREE.Vector3();
+    var _mouseWorld = new THREE.Vector3(0, 0, 0);
+    var _tempVec = new THREE.Vector3();
+
+    // --- PROCEDURAL GLOWING PARTICLE SPRITE TEXTURE ---
+    var createParticleTexture = function() {
+      var pCanvas = document.createElement('canvas');
+      pCanvas.width = 64;
+      pCanvas.height = 64;
+      var ctx = pCanvas.getContext('2d');
+      var cx = 32, cy = 32;
+
+      var grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, 30);
+      grad.addColorStop(0, 'rgba(255, 255, 255, 1.0)');
+      grad.addColorStop(0.14, 'rgba(245, 230, 200, 0.95)');
+      grad.addColorStop(0.38, 'rgba(226, 232, 240, 0.45)');
+      grad.addColorStop(0.70, 'rgba(255, 214, 0, 0.15)');
+      grad.addColorStop(1.0, 'rgba(0, 0, 0, 0.0)');
+
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, 64, 64);
+
+      var tex = new THREE.CanvasTexture(pCanvas);
+      tex.needsUpdate = true;
+      return tex;
+    };
+    var particleTexture = createParticleTexture();
+
+    // =========================================================================
+    // PART A: THE CINEMATIC BLACK HOLE (GARGANTUA)
+    // =========================================================================
+    var blackHoleRoot = new THREE.Group();
+    scene.add(blackHoleRoot);
+
+    // 1. Central Event Horizon Sphere (Pure Light-Absorbing Void)
+    var horizonGeo = new THREE.SphereGeometry(2.18, 64, 64);
+    var horizonMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
+    var eventHorizon = new THREE.Mesh(horizonGeo, horizonMat);
+    blackHoleRoot.add(eventHorizon);
+
+    // 2. Einstein Photon Sphere (Intense Champagne-Silver Rim at r ≈ 2.24)
+    var photonGeo = new THREE.TorusGeometry(2.24, 0.026, 16, 120);
+    var photonMat = new THREE.MeshBasicMaterial({
+      color: 0xfffae0,
+      transparent: true,
+      opacity: 0.98,
+      blending: THREE.AdditiveBlending
+    });
+    var photonRing = new THREE.Mesh(photonGeo, photonMat);
+    blackHoleRoot.add(photonRing);
+
+    // Secondary sub-photon rings (Higher-order relativistic orbits)
+    var subRing1Geo = new THREE.TorusGeometry(2.40, 0.012, 16, 120);
+    var subRing1Mat = new THREE.MeshBasicMaterial({ color: 0xf5e6c8, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending });
+    var subRing1 = new THREE.Mesh(subRing1Geo, subRing1Mat);
+    blackHoleRoot.add(subRing1);
+
+    var subRing2Geo = new THREE.TorusGeometry(2.62, 0.008, 16, 120);
+    var subRing2Mat = new THREE.MeshBasicMaterial({ color: 0xe2e8f0, transparent: true, opacity: 0.38, blending: THREE.AdditiveBlending });
+    var subRing2 = new THREE.Mesh(subRing2Geo, subRing2Mat);
+    blackHoleRoot.add(subRing2);
+
+    // 3. Custom GLSL Shader for Accretion Disk (Keplerian velocity, noise streaks & Doppler)
+    var accretionVertexShader = [
+      'varying vec2 vUv;',
+      'varying vec3 vWorldPos;',
+      'void main() {',
+      '  vUv = uv;',
+      '  vec4 worldPos = modelMatrix * vec4(position, 1.0);',
+      '  vWorldPos = worldPos.xyz;',
+      '  gl_Position = projectionMatrix * viewMatrix * worldPos;',
+      '}'
+    ].join('\n');
+
+    var accretionFragmentShader = [
+      'uniform float uTime;',
+      'uniform float uInnerRadius;',
+      'uniform float uOuterRadius;',
+      'uniform float uCameraAngle;',
+      'uniform float uDopplerStrength;',
+      'uniform vec3 uColorCore;',
+      'uniform vec3 uColorGold;',
+      'uniform vec3 uColorAmber;',
+      'uniform vec3 uColorDark;',
+      'varying vec2 vUv;',
+      'varying vec3 vWorldPos;',
+      '',
+      'float hash(vec2 p) {',
+      '  return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);',
+      '}',
+      'float noise(vec2 p) {',
+      '  vec2 i = floor(p);',
+      '  vec2 f = fract(p);',
+      '  vec2 u = f * f * (3.0 - 2.0 * f);',
+      '  return mix(mix(hash(i + vec2(0.0,0.0)), hash(i + vec2(1.0,0.0)), u.x),',
+      '             mix(hash(i + vec2(0.0,1.0)), hash(i + vec2(1.0,1.0)), u.x), u.y);',
+      '}',
+      'float fbm(vec2 p) {',
+      '  float v = 0.0;',
+      '  float a = 0.5;',
+      '  mat2 rot = mat2(cos(0.5), sin(0.5), -sin(0.5), cos(0.5));',
+      '  for (int i = 0; i < 4; i++) {',
+      '    v += a * noise(p);',
+      '    p = rot * p * 2.0 + vec2(100.0);',
+      '    a *= 0.5;',
+      '  }',
+      '  return v;',
+      '}',
+      '',
+      'void main() {',
+      '  float r = length(vWorldPos.xz);',
+      '  if (r < uInnerRadius || r > uOuterRadius) discard;',
+      '',
+      '  float phi = atan(vWorldPos.z, vWorldPos.x);',
+      '  float kepler = uTime * 1.5 * pow(uInnerRadius / max(r, 0.1), 1.35);',
+      '  float streamAngle = phi - kepler;',
+      '',
+      '  vec2 uvNoise = vec2(streamAngle * 3.2, r * 1.6);',
+      '  float plasma = fbm(uvNoise + vec2(uTime * 0.18, 0.0));',
+      '  float filaments = sin(streamAngle * 12.0 + r * 4.0 + plasma * 5.0) * 0.5 + 0.5;',
+      '  float gasDensity = mix(filaments, plasma, 0.45);',
+      '',
+      '  float t = clamp((r - uInnerRadius) / (uOuterRadius - uInnerRadius), 0.0, 1.0);',
+      '  vec3 col;',
+      '  if (t < 0.16) {',
+      '    col = mix(uColorCore, uColorGold, t / 0.16);',
+      '  } else if (t < 0.55) {',
+      '    col = mix(uColorGold, uColorAmber, (t - 0.16) / 0.39);',
+      '  } else {',
+      '    col = mix(uColorAmber, uColorDark, (t - 0.55) / 0.45);',
+      '  }',
+      '',
+      '  float doppler = 1.0 + uDopplerStrength * sin(phi - uCameraAngle);',
+      '  col *= pow(max(doppler, 0.15), 1.6);',
+      '  if (doppler > 1.25) {',
+      '    col = mix(col, vec3(1.0, 0.98, 0.92), min(1.0, (doppler - 1.25) * 0.6));',
+      '  }',
+      '',
+      '  float innerFade = smoothstep(uInnerRadius, uInnerRadius + 0.20, r);',
+      '  float outerFade = smoothstep(uOuterRadius, uOuterRadius - 1.4, r);',
+      '  float alpha = innerFade * outerFade * (0.62 + gasDensity * 0.42);',
+      '',
+      '  gl_FragColor = vec4(col, alpha);',
+      '}'
+    ].join('\n');
+
+    var accretionUniforms = {
+      uTime: { value: 0.0 },
+      uInnerRadius: { value: 2.22 },
+      uOuterRadius: { value: 8.8 },
+      uCameraAngle: { value: 0.0 },
+      uDopplerStrength: { value: 0.58 },
+      uColorCore: { value: new THREE.Color(0xfff9ef) },   // Incandescent Platinum White
+      uColorGold: { value: new THREE.Color(0xf5d886) },   // Warm Champagne Gold
+      uColorAmber: { value: new THREE.Color(0xda8228) },  // Interstellar Amber
+      uColorDark: { value: new THREE.Color(0x280e04) }    // Deep Boundary Void
+    };
+
+    var accretionMat = new THREE.ShaderMaterial({
+      uniforms: accretionUniforms,
+      vertexShader: accretionVertexShader,
+      fragmentShader: accretionFragmentShader,
+      side: THREE.DoubleSide,
+      transparent: true,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false
+    });
+
+    // 4. Primary Horizontal Accretion Disk Mesh
+    var diskGeo = new THREE.RingGeometry(2.22, 8.8, 120, 16);
+    var accretionDisk = new THREE.Mesh(diskGeo, accretionMat);
+    accretionDisk.rotation.x = Math.PI * 0.44; // Iconic Interstellar elevation angle
+    blackHoleRoot.add(accretionDisk);
+
+    // 5. Gravitational Lensing Halo (The Iconic Upper and Lower Curved Arcs)
+    var haloFragmentShader = [
+      'uniform float uTime;',
+      'uniform float uInnerRadius;',
+      'uniform float uOuterRadius;',
+      'uniform float uCameraAngle;',
+      'uniform float uDopplerStrength;',
+      'uniform vec3 uColorCore;',
+      'uniform vec3 uColorGold;',
+      'uniform vec3 uColorAmber;',
+      'uniform vec3 uColorDark;',
+      'varying vec2 vUv;',
+      'varying vec3 vWorldPos;',
+      '',
+      'float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123); }',
+      'float noise(vec2 p) {',
+      '  vec2 i = floor(p); vec2 f = fract(p); vec2 u = f * f * (3.0 - 2.0 * f);',
+      '  return mix(mix(hash(i + vec2(0.0,0.0)), hash(i + vec2(1.0,0.0)), u.x),',
+      '             mix(hash(i + vec2(0.0,1.0)), hash(i + vec2(1.0,1.0)), u.x), u.y);',
+      '}',
+      '',
+      'void main() {',
+      '  float r = length(vWorldPos.xy);',
+      '  if (r < uInnerRadius || r > uOuterRadius) discard;',
+      '',
+      '  float phi = atan(vWorldPos.y, vWorldPos.x);',
+      '  float t = clamp((r - uInnerRadius) / (uOuterRadius - uInnerRadius), 0.0, 1.0);',
+      '',
+      '  vec3 col = mix(uColorCore, uColorGold, t);',
+      '  float doppler = 1.0 + uDopplerStrength * 0.5 * sin(phi - uCameraAngle);',
+      '  col *= pow(max(doppler, 0.2), 1.4);',
+      '',
+      '  float innerFade = smoothstep(uInnerRadius, uInnerRadius + 0.25, r);',
+      '  float outerFade = smoothstep(uOuterRadius, uOuterRadius - 1.2, r);',
+      '  float mask = abs(sin(phi));', // Softens horizon overlap
+      '  float alpha = innerFade * outerFade * 0.58 * (0.6 + mask * 0.4);',
+      '',
+      '  gl_FragColor = vec4(col, alpha);',
+      '}'
+    ].join('\n');
+
+    var haloUniforms = {
+      uTime: accretionUniforms.uTime,
+      uInnerRadius: { value: 2.22 },
+      uOuterRadius: { value: 7.2 },
+      uCameraAngle: accretionUniforms.uCameraAngle,
+      uDopplerStrength: { value: 0.50 },
+      uColorCore: accretionUniforms.uColorCore,
+      uColorGold: accretionUniforms.uColorGold,
+      uColorAmber: accretionUniforms.uColorAmber,
+      uColorDark: accretionUniforms.uColorDark
+    };
+
+    var haloMat = new THREE.ShaderMaterial({
+      uniforms: haloUniforms,
+      vertexShader: accretionVertexShader,
+      fragmentShader: haloFragmentShader,
+      side: THREE.DoubleSide,
+      transparent: true,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false
+    });
+
+    var haloGeo = new THREE.RingGeometry(2.22, 7.2, 120, 16);
+    var lensingHalo = new THREE.Mesh(haloGeo, haloMat);
+    lensingHalo.position.z = -0.15; // Renders behind event horizon for genuine 3D occlusion
+    blackHoleRoot.add(lensingHalo);
+
+    // 6. Subtle Volumetric Outer Corona Atmosphere
+    var coronaGeo = new THREE.SphereGeometry(3.6, 32, 32);
+    var coronaMat = new THREE.MeshBasicMaterial({
+      color: 0xf5d886,
+      transparent: true,
+      opacity: 0.07,
+      wireframe: true,
+      blending: THREE.AdditiveBlending
+    });
+    var coronaMesh = new THREE.Mesh(coronaGeo, coronaMat);
+    blackHoleRoot.add(coronaMesh);
+
+    // =========================================================================
+    // PART B: INTERACTIVE PARTICLE PHYSICS UNIVERSE (5,500 PARTICLES)
+    // =========================================================================
+    var TOTAL_PARTICLES = 5500;
+    var ACCRETION_COUNT = 2000;
+    var AMBIENT_COUNT = TOTAL_PARTICLES - ACCRETION_COUNT;
+
+    var partPositions = new Float32Array(TOTAL_PARTICLES * 3);
+    var partHomePos = new Float32Array(TOTAL_PARTICLES * 3);
+    var partVelocities = new Float32Array(TOTAL_PARTICLES * 3);
+    var partColors = new Float32Array(TOTAL_PARTICLES * 3);
+    var partSizes = new Float32Array(TOTAL_PARTICLES);
+    var partTypes = new Uint8Array(TOTAL_PARTICLES); // 0 = ambient, 1 = accretion stream
+
+    // Accretion specific orbital attributes
+    var accRadii = new Float32Array(ACCRETION_COUNT);
+    var accAngles = new Float32Array(ACCRETION_COUNT);
+    var accSpeeds = new Float32Array(ACCRETION_COUNT);
+    var accHeights = new Float32Array(ACCRETION_COUNT);
+
+    // Color definitions
+    var cChampagne = new THREE.Color(0xf5e6c8);
+    var cPulsarGold = new THREE.Color(0xffd600);
+    var cSilver = new THREE.Color(0xe2e8f0);
+    var cPaleWhite = new THREE.Color(0xfffdf0);
+    var cAmber = new THREE.Color(0xd97724);
+
+    // 1. Initialize Ambient Cosmic Starfield (3,500 particles)
+    for (var i = 0; i < AMBIENT_COUNT; i++) {
+      var i3 = i * 3;
+      var ax = (Math.random() - 0.5) * 44;
+      var ay = (Math.random() - 0.5) * 48;
+      var az = (Math.random() - 0.5) * 26 - 2;
+
+      partPositions[i3] = ax;
+      partPositions[i3 + 1] = ay;
+      partPositions[i3 + 2] = az;
+
+      partHomePos[i3] = ax;
+      partHomePos[i3 + 1] = ay;
+      partHomePos[i3 + 2] = az;
+
+      partVelocities[i3] = 0;
+      partVelocities[i3 + 1] = 0;
+      partVelocities[i3 + 2] = 0;
+
+      // Color distribution: 40% Champagne Gold, 35% Silver, 15% Pale White, 10% Dim Amber
+      var randC = Math.random();
+      var col;
+      if (randC < 0.40) col = cChampagne;
+      else if (randC < 0.75) col = cSilver;
+      else if (randC < 0.90) col = cPaleWhite;
+      else col = cAmber;
+
+      partColors[i3] = col.r;
+      partColors[i3 + 1] = col.g;
+      partColors[i3 + 2] = col.b;
+
+      // Varied star sizes
+      partSizes[i] = 0.16 + Math.random() * 0.45;
+      partTypes[i] = 0;
+    }
+
+    // 2. Initialize Orbiting Accretion Stream Particles (2,000 particles)
+    for (var j = 0; j < ACCRETION_COUNT; j++) {
+      var pIdx = AMBIENT_COUNT + j;
+      var pj3 = pIdx * 3;
+
+      var rAcc = 2.4 + Math.random() * 6.4;
+      var aAcc = Math.random() * Math.PI * 2;
+      var spd = (0.015 + Math.random() * 0.018) * Math.pow(2.4 / rAcc, 1.25);
+      var hAcc = (Math.random() - 0.5) * 0.35;
+
+      accRadii[j] = rAcc;
+      accAngles[j] = aAcc;
+      accSpeeds[j] = spd;
+      accHeights[j] = hAcc;
+
+      // Tilted plane calculation
+      var px = Math.cos(aAcc) * rAcc;
+      var py = hAcc + Math.sin(aAcc) * rAcc * Math.sin(Math.PI * 0.44) * 0.25;
+      var pz = Math.sin(aAcc) * rAcc;
+
+      partPositions[pj3] = px;
+      partPositions[pj3 + 1] = py;
+      partPositions[pj3 + 2] = pz;
+
+      partHomePos[pj3] = px;
+      partHomePos[pj3 + 1] = py;
+      partHomePos[pj3 + 2] = pz;
+
+      partVelocities[pj3] = 0;
+      partVelocities[pj3 + 1] = 0;
+      partVelocities[pj3 + 2] = 0;
+
+      // Hotter colors near horizon
+      var rNorm = (rAcc - 2.4) / 6.4;
+      var cAcc = (rNorm < 0.25) ? cSilver : ((rNorm < 0.65) ? cPulsarGold : cAmber);
+
+      partColors[pj3] = cAcc.r;
+      partColors[pj3 + 1] = cAcc.g;
+      partColors[pj3 + 2] = cAcc.b;
+
+      partSizes[pIdx] = 0.22 + Math.random() * 0.38;
+      partTypes[pIdx] = 1;
+    }
+
+    var particleGeo = new THREE.BufferGeometry();
+    particleGeo.setAttribute('position', new THREE.BufferAttribute(partPositions, 3));
+    particleGeo.setAttribute('color', new THREE.BufferAttribute(partColors, 3));
+
+    var particleMat = new THREE.PointsMaterial({
+      size: 0.28 * dpr,
+      map: particleTexture,
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.90,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false
+    });
+
+    var particleSystem = new THREE.Points(particleGeo, particleMat);
+    scene.add(particleSystem);
+
+    // =========================================================================
+    // PART C: INTERACTIVE GRAVITATIONAL CURSOR & RIPPLE PHYSICS
+    // =========================================================================
+    var isDragging = false;
+    var normMouseX = 0, normMouseY = 0;
+    var prevMouseX = 0, prevMouseY = 0;
+    var rotVelX = 0, rotVelY = 0;
+
+    // Golden Gravitational Ripple Wave State
+    var rippleActive = false;
+    var rippleOrigin = new THREE.Vector3();
+    var rippleRadius = 0.0;
+    var rippleStrength = 0.0;
+
+    // Trigger golden gravitational ripple
+    var triggerGravitationalRipple = function(worldX, worldY, worldZ) {
+      rippleActive = true;
+      rippleOrigin.set(worldX, worldY, worldZ || 0);
+      rippleRadius = 0.2;
+      rippleStrength = 1.0;
+    };
+
+    window.addEventListener('pointerdown', function(e) {
+      // Don't drag if clicking interactive links or buttons
+      if (e.target.closest('a, button, input, textarea, .card, .arch-node, nav')) return;
+      isDragging = true;
+      prevMouseX = e.clientX;
+      prevMouseY = e.clientY;
+
+      // Trigger expanding golden ripple on click / tap
+      triggerGravitationalRipple(_mouseWorld.x, _mouseWorld.y, _mouseWorld.z);
+    });
+
+    window.addEventListener('pointerup', function() {
+      isDragging = false;
+    });
+
+    window.addEventListener('pointermove', function(e) {
+      normMouseX = (e.clientX / window.innerWidth) * 2 - 1;
+      normMouseY = -((e.clientY / window.innerHeight) * 2 - 1);
+
+      if (isDragging) {
+        var dx = e.clientX - prevMouseX;
+        var dy = e.clientY - prevMouseY;
+        rotVelY += dx * 0.0016;
+        rotVelX += dy * 0.0016;
+        prevMouseX = e.clientX;
+        prevMouseY = e.clientY;
+      }
+    }, { passive: true });
+
+    // Touch support for mobile tapping without blocking normal scroll
+    window.addEventListener('touchstart', function(e) {
+      if (e.touches && e.touches.length === 1 && !e.target.closest('a, button, input, textarea, nav')) {
+        var touch = e.touches[0];
+        normMouseX = (touch.clientX / window.innerWidth) * 2 - 1;
+        normMouseY = -((touch.clientY / window.innerHeight) * 2 - 1);
+        _rayVec.set(normMouseX, normMouseY, 0.5).unproject(camera);
+        _rayVec.sub(camera.position).normalize();
+        var distToZ = -camera.position.z / _rayVec.z;
+        _mouseWorld.copy(camera.position).addScaledVector(_rayVec, distToZ);
+        triggerGravitationalRipple(_mouseWorld.x, _mouseWorld.y, _mouseWorld.z);
+      }
+    }, { passive: true });
+
+    // Handle Resize
+    var handleResize = function() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    };
+    window.addEventListener('resize', handleResize);
+
+    // =========================================================================
+    // PART D: GSAP SCROLLTRIGGER INTEGRATION & CINEMATIC CAMERA PATH
+    // =========================================================================
+    var scrollProgress = 0.0;
+
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+      ScrollTrigger.create({
+        trigger: document.body,
+        start: 'top top',
+        end: 'bottom bottom',
+        onUpdate: function(self) {
+          scrollProgress = self.progress;
+        }
+      });
+    }
+
+    // Telemetry HUD elements
+    var hudBar = document.getElementById('hud-bar');
+    var hudSector = document.getElementById('hud-sector');
+    var hudDistance = document.getElementById('hud-distance');
+    var hudFps = document.getElementById('hud-fps');
+    var timelineFill = document.getElementById('timeline-fill');
+    var timelineBeacon = document.getElementById('timeline-beacon');
+    var timelineContainer = document.getElementById('timeline-container');
+    var timelineSteps = document.querySelectorAll('.timeline-step');
+
+    var sectorNames = [
+      'Sector 01: Gargantua Singularity',
+      'Sector 02: Relativistic Horizon',
+      'Sector 03: Distributed Cloud Grid',
+      'Sector 04: Golden Constellation',
+      'Sector 05: Gravitational Payload',
+      'Sector 06: Interstellar Uplink'
+    ];
+
+    // FPS Meter (Real Measured Performance)
+    var frameCount = 0;
+    var lastFpsTime = performance.now();
+    var currentFps = 60;
+    var clock = new THREE.Clock();
+
+    // Tab visibility handling (Pauses WebGL rendering when hidden to preserve battery)
+    var isTabActive = true;
+    document.addEventListener('visibilitychange', function() {
+      isTabActive = !document.hidden;
+      if (isTabActive) clock.start();
+    });
+
+    // WebGL Context Loss Recovery
+    canvas.addEventListener('webglcontextlost', function(e) {
+      e.preventDefault();
+      console.warn('WebGL context lost. Pausing rendering.');
+    }, false);
+    canvas.addEventListener('webglcontextrestored', function() {
+      console.info('WebGL context restored.');
+      handleResize();
+    }, false);
+
+    // =========================================================================
+    // PART E: 60FPS CINEMATIC RENDER & PHYSICS LOOP
+    // =========================================================================
+    var targetCamZ = 15.0;
+    var targetCamX = 0.0;
+    var targetCamY = 0.0;
+    var targetBhX = 0.0;
+    var targetBhY = 0.2;
+    var targetBhZ = 0.0;
+    var bhRotY = 0.0;
+    var bhRotX = 0.0;
+
+    var renderFrame = function() {
+      if (!isTabActive) {
+        requestAnimationFrame(renderFrame);
+        return;
+      }
+
+      var delta = clock.getDelta();
+      var dt = Math.min(delta, 0.05); // Frame delta cap
+      var elapsed = clock.getElapsedTime();
+
+      // Measured FPS calculation
+      frameCount++;
+      if (performance.now() - lastFpsTime >= 1000) {
+        currentFps = frameCount;
+        frameCount = 0;
+        lastFpsTime = performance.now();
+        if (hudFps) hudFps.textContent = currentFps + ' FPS';
+      }
+
+      // Fallback scroll fraction if GSAP ScrollTrigger not ready
+      if (typeof ScrollTrigger === 'undefined' || !scrollProgress) {
+        var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        scrollProgress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
+      }
+
+      // Update HUD Telemetry
+      if (hudBar) hudBar.style.width = (scrollProgress * 100).toFixed(1) + '%';
+      if (hudSector) {
+        var sIdx = Math.min(sectorNames.length - 1, Math.floor(scrollProgress * sectorNames.length));
+        hudSector.textContent = sectorNames[sIdx];
+      }
+      if (hudDistance) {
+        hudDistance.textContent = (scrollProgress * 42.8).toFixed(1) + ' AU';
+      }
+
+      // Update Journey Timeline Bar
+      if (timelineContainer && timelineFill && timelineBeacon) {
+        var tRect = timelineContainer.getBoundingClientRect();
+        var tProgress = Math.max(0, Math.min(1, (window.innerHeight * 0.65 - tRect.top) / tRect.height));
+        timelineFill.style.transform = 'scaleY(' + tProgress + ')';
+        timelineBeacon.style.transform = 'translateY(' + (tProgress * tRect.height) + 'px)';
+
+        timelineSteps.forEach(function(step) {
+          var sRect = step.getBoundingClientRect();
+          if (sRect.top < window.innerHeight * 0.72) {
+            step.classList.add('active');
+          }
+        });
+      }
+
+      // -----------------------------------------------------------------------
+      // 1. Unproject mouse to 3D world coordinates for physical interaction
+      // -----------------------------------------------------------------------
+      _rayVec.set(normMouseX, normMouseY, 0.5).unproject(camera);
+      _rayVec.sub(camera.position).normalize();
+      var distToCenter = -camera.position.z / _rayVec.z;
+      _mouseWorld.copy(camera.position).addScaledVector(_rayVec, distToCenter);
+
+      // -----------------------------------------------------------------------
+      // 2. Cinematic Black Hole Pathing across Sections (GSAP Scroll Scrub)
+      // -----------------------------------------------------------------------
+      var isWide = window.innerWidth > 800;
+
+      if (scrollProgress < 0.20) {
+        // Hero: Central, enormous and imposing
+        targetBhX = isWide ? 0.0 : 0.0;
+        targetBhY = isWide ? 0.2 : 1.8;
+        targetBhZ = 0.0;
+        targetCamZ = 15.0 - scrollProgress * 6.0;
+      } else if (scrollProgress < 0.45) {
+        // Architecture: Glides to the right, framing the 4-tier cloud visualizer
+        targetBhX = isWide ? 3.4 : 0.0;
+        targetBhY = isWide ? -0.4 : 1.5;
+        targetBhZ = -1.2;
+        targetCamZ = 13.8;
+      } else if (scrollProgress < 0.70) {
+        // Skills: Elevated in deep space, illuminating golden constellation grid
+        targetBhX = isWide ? -3.2 : 0.0;
+        targetBhY = isWide ? 0.6 : 1.4;
+        targetBhZ = -2.2;
+        targetCamZ = 14.5;
+      } else if (scrollProgress < 0.88) {
+        // Projects: Shifted to right quadrant, casting champagne aura on project cards
+        targetBhX = isWide ? 3.2 : 0.0;
+        targetBhY = isWide ? 0.1 : 1.2;
+        targetBhZ = -1.5;
+        targetCamZ = 14.0;
+      } else {
+        // Contact: Converged singularity in the lower horizon
+        targetBhX = 0.0;
+        targetBhY = isWide ? -1.5 : -0.8;
+        targetBhZ = 0.6;
+        targetCamZ = 13.2;
+      }
+
+      // Smooth position easing
+      blackHoleRoot.position.x += (targetBhX - blackHoleRoot.position.x) * 0.06;
+      blackHoleRoot.position.y += (targetBhY - blackHoleRoot.position.y) * 0.06;
+      blackHoleRoot.position.z += (targetBhZ - blackHoleRoot.position.z) * 0.06;
+
+      camera.position.z += (targetCamZ - camera.position.z) * 0.06;
+
+      // Subtle parallax on camera
+      targetCamX = normMouseX * 0.75;
+      targetCamY = normMouseY * 0.45;
+      camera.position.x += (targetCamX - camera.position.x) * 0.05;
+      camera.position.y += (targetCamY - camera.position.y) * 0.05;
+      camera.lookAt(blackHoleRoot.position.x * 0.25, blackHoleRoot.position.y * 0.25, 0);
+
+      // Free-drag viewing angle rotation with smooth inertia
+      if (!reducedMotion) {
+        bhRotY += rotVelY + 0.002;
+        bhRotX += rotVelX;
+        rotVelX *= 0.92;
+        rotVelY *= 0.92;
+
+        blackHoleRoot.rotation.y = bhRotY;
+        blackHoleRoot.rotation.x = bhRotX * 0.5;
+      }
+
+      // Update shader uniforms
+      accretionUniforms.uTime.value = elapsed;
+      accretionUniforms.uCameraAngle.value = bhRotY;
+
+      // -----------------------------------------------------------------------
+      // 3. Golden Gravitational Ripple Wave Propagation
+      // -----------------------------------------------------------------------
+      if (rippleActive) {
+        rippleRadius += 16.0 * dt;
+        rippleStrength -= 1.1 * dt;
+        if (rippleStrength <= 0.0) {
+          rippleActive = false;
+        }
+      }
+
+      // -----------------------------------------------------------------------
+      // 4. Physical Particle Simulation (Springs, Repulsion, Inflow & Ripple)
+      // -----------------------------------------------------------------------
+      var pPos = particleGeo.attributes.position.array;
+      var pCols = particleGeo.attributes.color.array;
+      var repelRadius = 4.8;
+      var repelRadiusSq = repelRadius * repelRadius;
+      var mx = _mouseWorld.x;
+      var my = _mouseWorld.y;
+      var mz = _mouseWorld.z;
+
+      var rx = rippleOrigin.x;
+      var ry = rippleOrigin.y;
+      var rz = rippleOrigin.z;
+      var ripRad = rippleRadius;
+      var ripStr = rippleStrength;
+      var hasRipple = rippleActive;
+
+      var isSecArch = (scrollProgress >= 0.20 && scrollProgress < 0.45);
+      var isSecContact = (scrollProgress >= 0.88);
+
+      for (var p = 0; p < TOTAL_PARTICLES; p++) {
+        var idx3 = p * 3;
+        var px = pPos[idx3];
+        var py = pPos[idx3 + 1];
+        var pz = pPos[idx3 + 2];
+
+        var vx = partVelocities[idx3];
+        var vy = partVelocities[idx3 + 1];
+        var vz = partVelocities[idx3 + 2];
+
+        var pType = partTypes[p];
+
+        if (pType === 1) {
+          // ACCRETION PARTICLES: Keplerian differential orbital stream
+          var aIdx = p - AMBIENT_COUNT;
+          accAngles[aIdx] += accSpeeds[aIdx];
+          var curR = accRadii[aIdx];
+          var curA = accAngles[aIdx];
+
+          // Compute base orbital coordinate on tilted accretion plane
+          var baseAx = blackHoleRoot.position.x + Math.cos(curA) * curR;
+          var baseAy = blackHoleRoot.position.y + accHeights[aIdx] + Math.sin(curA) * curR * 0.22;
+          var baseAz = blackHoleRoot.position.z + Math.sin(curA) * curR;
+
+          // Spring towards orbital slot
+          var fOrbX = (baseAx - px) * 0.06;
+          var fOrbY = (baseAy - py) * 0.06;
+          var fOrbZ = (baseAz - pz) * 0.06;
+
+          vx += fOrbX;
+          vy += fOrbY;
+          vz += fOrbZ;
+        } else {
+          // AMBIENT PARTICLES: Spring to home position
+          var hx = partHomePos[idx3];
+          var hy = partHomePos[idx3 + 1];
+          var hz = partHomePos[idx3 + 2];
+
+          // Subtle section-specific flow modulation
+          if (isSecArch && (p % 6 === 0)) {
+            // Architecture: Flowing golden data packet stream between tiers
+            hy -= 0.04;
+            if (hy < -20) hy = 20;
+            partHomePos[idx3 + 1] = hy;
+          } else if (isSecContact && (p % 4 === 0)) {
+            // Contact: Converging uplink vortex towards singularity
+            var toBhX = blackHoleRoot.position.x - px;
+            var toBhY = blackHoleRoot.position.y - py;
+            vx += toBhX * 0.008;
+            vy += toBhY * 0.008;
+          }
+
+          var fSprX = (hx - px) * 0.045;
+          var fSprY = (hy - py) * 0.045;
+          var fSprZ = (hz - pz) * 0.045;
+
+          vx += fSprX;
+          vy += fSprY;
+          vz += fSprZ;
+        }
+
+        // --- CURSOR REPULSION & VORTEX IN 3D ---
+        var dx = px - mx;
+        var dy = py - my;
+        var dz = pz - mz;
+        var distSq = dx * dx + dy * dy + dz * dz;
+
+        if (distSq < repelRadiusSq) {
+          var dist = Math.sqrt(distSq) + 0.001;
+          var factor = (1.0 - dist / repelRadius);
+          var force = factor * factor * 28.0 * dt;
+
+          if (isDragging) {
+            // DRAG MODE: Dual-zone gravitational tidal field
+            if (dist < 2.2) {
+              // Repulsive inner core
+              vx += (dx / dist) * force * 1.5;
+              vy += (dy / dist) * force * 1.5;
+            } else {
+              // Attractive gravitational capture
+              vx -= (dx / dist) * 12.0 * dt;
+              vy -= (dy / dist) * 12.0 * dt;
+            }
+          } else {
+            // NORMAL CURSOR MOVE: Smooth repulsion with 3D depth deflection
+            vx += (dx / dist) * force;
+            vy += (dy / dist) * force;
+            vz += (dz / dist) * force * 0.5;
+
+            // Subtle gravitational vortex eddy around cursor
+            vx += -dy * factor * 7.0 * dt;
+            vy += dx * factor * 7.0 * dt;
+          }
+        }
+
+        // --- CLICK GRAVITATIONAL RIPPLE WAVE ---
+        if (hasRipple) {
+          var rdx = px - rx;
+          var rdy = py - ry;
+          var rdz = pz - rz;
+          var rDist = Math.sqrt(rdx * rdx + rdy * rdy + rdz * rdz) + 0.001;
+          var waveDiff = Math.abs(rDist - ripRad);
+
+          if (waveDiff < 1.4) {
+            var ripForce = (1.4 - waveDiff) * ripStr * 24.0 * dt;
+            vx += (rdx / rDist) * ripForce;
+            vy += (rdy / rDist) * ripForce;
+            vz += (rdz / rDist) * ripForce * 0.6;
+          }
+        }
+
+        // Damping / Friction
+        vx *= 0.90;
+        vy *= 0.90;
+        vz *= 0.90;
+
+        // Apply velocities
+        pPos[idx3] = px + vx;
+        pPos[idx3 + 1] = py + vy;
+        pPos[idx3 + 2] = pz + vz;
+
+        partVelocities[idx3] = vx;
+        partVelocities[idx3 + 1] = vy;
+        partVelocities[idx3 + 2] = vz;
+      }
+
+      particleGeo.attributes.position.needsUpdate = true;
+
+      // Render Three.js scene
+      renderer.render(scene, camera);
+      requestAnimationFrame(renderFrame);
+    };
+
+    renderFrame();
+  }
+
+  /* ==========================================================================
+     6. INTERACTIVE ARCHITECTURE BLUEPRINT CONTROLS
+     ========================================================================== */
+  var archNodes = document.querySelectorAll('.arch-node');
+  var inspectStatus = document.getElementById('arch-inspect-status');
+  var inspectTitle = document.getElementById('arch-inspect-title');
+  var inspectDesc = document.getElementById('arch-inspect-desc');
+  var btnSimPulse = document.getElementById('btn-arch-flow');
+  var btnResetArch = document.getElementById('btn-arch-reset');
+
+  archNodes.forEach(function(node) {
+    node.addEventListener('click', function() {
+      archNodes.forEach(function(n) { n.classList.remove('active'); });
+      node.classList.add('active');
+
+      if (inspectTitle) inspectTitle.textContent = node.getAttribute('data-title');
+      if (inspectDesc) inspectDesc.textContent = node.getAttribute('data-desc');
+      if (inspectStatus) inspectStatus.textContent = node.getAttribute('data-status');
+    });
+  });
+
+  if (btnSimPulse) {
+    btnSimPulse.addEventListener('click', function() {
+      var seq = Array.from(archNodes);
+      seq.forEach(function(n, i) {
+        setTimeout(function() {
+          n.style.borderColor = '#ffffff';
+          n.style.boxShadow = '0 0 24px #f5e6c8, 0 0 12px #ffd600';
+          setTimeout(function() {
+            n.style.borderColor = '';
+            n.style.boxShadow = '';
+          }, 400);
+        }, i * 90);
+      });
+      showToast('Traffic pulse propagated across all VPC subnets!');
+    });
+  }
+
+  if (btnResetArch) {
+    btnResetArch.addEventListener('click', function() {
+      archNodes.forEach(function(n) { n.classList.remove('active'); });
+      if (archNodes[0]) archNodes[0].click();
+    });
+  }
+
+  /* ==========================================================================
+     7. SKILLS MATRIX FILTERING & LIVE SEARCH
+     ========================================================================== */
+  var filterTabs = document.querySelectorAll('.filter-tab');
+  var skillCards = document.querySelectorAll('.skill-card');
+  var skillSearch = document.getElementById('skill-search');
+  var activeFilter = 'all';
+
+  var applySkillFilters = function() {
+    var query = (skillSearch ? skillSearch.value : '').toLowerCase().trim();
+
+    skillCards.forEach(function(card) {
+      var cat = card.getAttribute('data-cat');
+      var text = card.textContent.toLowerCase();
+      var matchesCategory = (activeFilter === 'all' || cat === activeFilter);
+      var matchesSearch = query === '' || text.indexOf(query) !== -1;
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  };
+
+  filterTabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      filterTabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      activeFilter = tab.getAttribute('data-filter');
+      applySkillFilters();
+    });
+  });
+
+  if (skillSearch) {
+    skillSearch.addEventListener('input', applySkillFilters);
+  }
+
+  /* ==========================================================================
+     8. INTERACTIVE ORBITAL MISSION TERMINAL ENGINE
+     ========================================================================== */
+  var termInput = document.getElementById('terminal-input');
+  var termOutput = document.getElementById('terminal-output');
+  var termChips = document.querySelectorAll('.terminal-chip-btn');
+  var quickTermBtn = document.getElementById('btn-quick-terminal');
+
+  var terminalCommands = {
+    help: 'Available Commands:\n  skills     - List full AWS, backend & DevOps technical stack\n  projects   - Show deployed projects & architectural details\n  roadmap    - View active 5-step AWS production roadmap\n  blackhole  - Display Interstellar Gargantua telemetry\n  ping       - Test simulated latency to AWS us-east-1 VPC\n  whoami     - Display candidate summary & education\n  contact    - Display communications channels\n  clear      - Clear terminal buffer',
+    skills: 'AWS & CLOUD INFRASTRUCTURE:\n- Storage: Amazon S3 (Bucket policies, Lifecycle), Amazon EBS (gp3/io2)\n- Database: Amazon RDS (PostgreSQL/Multi-AZ), Amazon Aurora (High-throughput)\n- Networking: Amazon VPC (Subnets, NAT, SG), AWS ELB (ALB/NLB), AWS VPN\n- Security & Governance: AWS IAM (Roles, OIDC), CloudWatch (Alarms), CloudTrail\n- Containers: Amazon ECS (Fargate), Amazon EKS (Kubernetes clusters)\n- Backend: Node.js, Express.js REST APIs, Linux (Ubuntu), Nginx, Git, Python, Java',
+    projects: 'DEPLOYED PROJECTS:\n[1] Smart Canteen - Online canteen web app, Node.js + Express REST API on Render.\n    Live URL: https://smart-canteen-oo0l.onrender.com/\n[2] AI Driven Multilingual Resume Architect - DeVert A Thon 26 national hackathon.\n    Audio-to-resume pipeline for Telugu & English speech.',
+    roadmap: 'AWS PRODUCTION ROADMAP:\n[1] Static website on Amazon S3 + CloudFront HTTPS + DNS.\n[2] Private EC2 instance with AWS SSM Session Manager (zero open ports).\n[3] Automated budget alert shutdown via CloudWatch & Lambda.\n[4] Secretless Node.js backend using AWS IAM Instance Profiles.\n[5] Continuous IaC: Terraform with GitHub Actions CI/CD & IAM OIDC.',
+    blackhole: 'INTERSTELLAR GARGANTUA TELEMETRY:\nEvent Horizon Radius: 2.18 AU | Einstein Photon Ring: 2.24 AU\nAccretion Disk Temperature: 1.4 x 10^7 K (Relativistic ISCO)\nGravitational Lensing: Active (Kip Thorne Geodesic Equations)\nRelativistic Doppler Beaming: Enabled (Asymmetric Flux Factor 0.58)\nSpacetime Curvature: Extreme Frame Dragging (Kerr Metric)',
+    ping: 'PING us-east-1.compute.amazonaws.com (10.0.1.42): 56 data bytes\n64 bytes from aws: icmp_seq=1 ttl=58 time=20.8 ms\n64 bytes from aws: icmp_seq=2 ttl=58 time=20.2 ms\n64 bytes from aws: icmp_seq=3 ttl=58 time=21.4 ms\n--- us-east-1 ping statistics ---\n3 packets transmitted, 3 received, 0% packet loss, avg = 20.8ms',
+    whoami: 'CANDIDATE: Manikanta N.\nROLE: Cloud & DevOps Systems Engineer | Backend Specialist\nACADEMIC: B.Tech Computer Science & Engineering (CMR Technical Campus, Telangana, CGPA 7.0)\nSTATUS: Open for immediate engineering internships.',
+    contact: 'COMMUNICATIONS UPLINK:\nEmail: manikantanagulapalli300@gmail.com\nLinkedIn: https://www.linkedin.com/in/mani-kanta-9b77a1368\nGitHub: https://github.com/manikantanagulapalli200704'
+  };
+
+  var runTerminalCommand = function(cmd) {
+    var raw = cmd.trim().toLowerCase();
+    if (!raw) return;
+
+    if (raw === 'clear') {
+      if (termOutput) termOutput.textContent = 'Orbital Terminal Buffer Cleared.\n';
+      return;
+    }
+
+    var response = terminalCommands[raw] || 'Command not found: "' + raw + '". Type "help" for available commands.';
+    if (termOutput) {
+      termOutput.textContent += '\nmani@interstellar:~$ ' + cmd + '\n' + response + '\n';
+      var body = document.getElementById('terminal-body');
+      if (body) body.scrollTop = body.scrollHeight;
+    }
+  };
+
+  if (termInput) {
+    termInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        var val = termInput.value;
+        runTerminalCommand(val);
+        termInput.value = '';
+      }
+    });
+  }
+
+  termChips.forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var cmd = chip.getAttribute('data-cmd');
+      runTerminalCommand(cmd);
+      if (termInput) termInput.focus();
+    });
+  });
+
+  if (quickTermBtn) {
+    quickTermBtn.addEventListener('click', function() {
+      var termSection = document.getElementById('terminal');
+      if (termSection) {
+        termSection.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(function() {
+          if (termInput) termInput.focus();
+        }, 600);
+      }
+    });
+  }
+
+  /* ==========================================================================
+     9. FAQ ACCORDION ENGINE
+     ========================================================================== */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item) {
+    var trigger = item.querySelector('.faq-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        faqItems.forEach(function(i) { i.classList.remove('open'); });
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    }
+  });
+
+  /* ==========================================================================
+     10. COPY EMAIL & TOAST NOTIFICATION
+     ========================================================================== */
+  var toastNotice = document.getElementById('toast-notice');
+  var toastText = document.getElementById('toast-text');
+  var copyEmailBtn = document.getElementById('btn-copy-email');
+
+  var showToast = function(msg) {
+    if (!toastNotice || !toastText) return;
+    toastText.textContent = msg;
+    toastNotice.classList.add('show');
+    setTimeout(function() {
+      toastNotice.classList.remove('show');
+    }, 3600);
+  };
+
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', function() {
+      var email = 'manikantanagulapalli300@gmail.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(function() {
+          showToast('Email address copied to clipboard: ' + email);
+        }).catch(function() {
+          showToast('Email: ' + email);
+        });
+      } else {
+        showToast('Email: ' + email);
+      }
+    });
+  }
+
+  /* ==========================================================================
+     11. CONTACT FORM CLIENT-SIDE VALIDATION PER B10
+     ========================================================================== */
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = document.getElementById('form-name').value.trim();
+      var email = document.getElementById('form-email').value.trim();
+      var message = document.getElementById('form-message').value.trim();
+
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!name) {
+        showToast('Please provide your name or company title.');
+        document.getElementById('form-name').focus();
+        return;
+      }
+      if (!email || !emailRegex.test(email)) {
+        showToast('Please enter a valid work email address.');
+        document.getElementById('form-email').focus();
+        return;
+      }
+      if (!message || message.length < 10) {
+        showToast('Please provide a message with at least 10 characters.');
+        document.getElementById('form-message').focus();
+        return;
+      }
+
+      var mailtoUrl = 'mailto:manikantanagulapalli300@gmail.com?subject=' +
+        encodeURIComponent('Internship Inquiry from ' + name) +
+        '&body=' + encodeURIComponent('Sender: ' + name + ' (' + email + ')\n\n' + message);
+
+      window.location.href = mailtoUrl;
+      showToast('Transmission prepared! Opening your mail client...');
+      contactForm.reset();
+    });
+  }
+
+  /* ==========================================================================
+     12. LEGAL MODAL (PRIVACY / TERMS) PER B10
+     ========================================================================== */
+  var legalModal = document.getElementById('legal-modal');
+  var modalTitle = document.getElementById('modal-title');
+  var modalText = document.getElementById('modal-text');
+  var modalCloseBtn = document.getElementById('modal-close-btn');
+  var linkPrivacy = document.getElementById('link-privacy');
+  var linkTerms = document.getElementById('link-terms');
+
+  var openLegalModal = function(title, text) {
+    if (modalTitle) modalTitle.textContent = title;
+    if (modalText) modalText.textContent = text;
+    if (legalModal) {
+      legalModal.classList.add('open');
+      legalModal.setAttribute('aria-hidden', 'false');
+    }
+  };
+
+  if (linkPrivacy) {
+    linkPrivacy.addEventListener('click', function(e) {
+      e.preventDefault();
+      openLegalModal('Privacy Policy', 'This portfolio collects no personal cookies, tracking analytics, or location telemetry. Any contact inquiries are routed solely through client-side email dispatch.');
+    });
+  }
+
+  if (linkTerms) {
+    linkTerms.addEventListener('click', function(e) {
+      e.preventDefault();
+      openLegalModal('Terms of Service', 'All software architecture diagrams, Node.js code snippets, and hackathon prototypes are intellectual property of Manikanta N. and are presented here for recruitment and technical review.');
+    });
+  }
+
+  if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', function() {
+      if (legalModal) {
+        legalModal.classList.remove('open');
+        legalModal.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
+  if (legalModal) {
+    legalModal.addEventListener('click', function(e) {
+      if (e.target === legalModal) {
+        legalModal.classList.remove('open');
+        legalModal.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
+})();
+</script>
+\n</body>\n</html>\n
